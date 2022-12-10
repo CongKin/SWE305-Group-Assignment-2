@@ -8,11 +8,8 @@ public class DecisionCanSeePlayer : AIDecision
 {
     public LayerMask obstacleMask;
     
-    private float viewDistance;
-    private float viewAngle;
-    
-    private float pointLightInnerRadius {get; set;}
-    private float pointLightInnerAngle {get; set;}
+    public float viewDistance;
+    public float viewAngle;
 
     public override bool Decide(StateController controller)
     {
@@ -22,21 +19,10 @@ public class DecisionCanSeePlayer : AIDecision
 
     private bool CanSeePlayer(StateController controller)
     {
-        if (controller.FieldOfView != null)
-        {
-            
-            // Get view Distance
-            viewDistance = controller.FieldOfView.get(pointLightInnerRadius);
-        
-            // Get the angle
-            viewAngle = controller.FieldOfView.get(pointLightInnerAngle);
-        }
-        
-        // Check the distance to the player
         float distanceToPlayer = (controller.Player.position - controller.transform.position).sqrMagnitude;
-        if (distanceToPlayer < Mathf.Pow(viewDistance, 2))
+
+        if(distanceToPlayer < Mathf.Pow(viewDistance, 2))
         {
-            // Check if the player is inside the view angle
             Vector2 directionToPlayer = (controller.Player.position - controller.transform.position).normalized;
             Vector2 faceDirection = controller.CharacterFlip.FacingRight ? Vector2.right : Vector2.left;
             float angleBetweenEnemyAndPlayer = Vector2.Angle(faceDirection, directionToPlayer);
