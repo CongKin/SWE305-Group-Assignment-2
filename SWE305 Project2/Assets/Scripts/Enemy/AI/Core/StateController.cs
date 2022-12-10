@@ -11,7 +11,7 @@ public class StateController : MonoBehaviour
 	[SerializeField] private AIState remainState;
 
     [Header("Field Of View")] 
-    [SerializeField] private UnityEngine.Rendering.Universal.Light2D fieldOfView;
+    [SerializeField] private UnityEngine.U2D.Light2DBase fieldOfView;
 	
     // Returns the target of this Enemy
     public Transform Target { get; set; }  
@@ -27,7 +27,7 @@ public class StateController : MonoBehaviour
     // Returns a reference to this enemy path
     public Path Path { get; set; }
 
-	public UnityEngine.Rendering.Universal.Light2D FieldOfView => fieldOfView; //A property to return the value to Field Of View
+	public UnityEngine.U2D.Light2DBase FieldOfView => fieldOfView; //A property to return the value to Field Of View
 
 	public Transform Player { get; set; }
 
