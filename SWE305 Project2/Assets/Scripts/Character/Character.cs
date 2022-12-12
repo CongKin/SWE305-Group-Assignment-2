@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public static Character Instance { get; private set; }
+
     public enum CharacterTypes
     {
         Player,
@@ -18,7 +20,10 @@ public class Character : MonoBehaviour
     private Inventory inventory;
 
     private void Awake(){
-        inventory = new Inventory();
+        Instance = this;    
+
+        inventory = new Inventory(UseItem);
+        uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
     }
 
@@ -29,7 +34,24 @@ public class Character : MonoBehaviour
             itemWorld.DestroySelf();
         }
     }
-    
+
+    private void UseItem(Item item) {
+        switch (item.itemType) {
+        case Item.ItemType.Health:
+            
+            inventory.RemoveItem(new Item { itemType = Item.ItemType.Health, amount = 1 });
+            break;
+        case Item.ItemType.Mana:
+            
+            inventory.RemoveItem(new Item { itemType = Item.ItemType.Mana, amount = 1 });
+            break;
+        }
+    }
+
+    public Vector3 GetPosition() {
+        return transform.position;
+    }
+
     public CharacterTypes CharacterType => characterType;
     public GameObject CharacterSprite => characterSprite;
     public Animator CharacterAnimator => characterAnimator;
