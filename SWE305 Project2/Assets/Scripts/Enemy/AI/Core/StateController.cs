@@ -9,9 +9,6 @@ public class StateController : MonoBehaviour
     [Header("State")] 
     [SerializeField] private AIState currentState;
 	[SerializeField] private AIState remainState;
-
-    // [Header("Field Of View")] 
-    // [SerializeField] private UnityEngine.U2D.Light2DBase fieldOfView;
 	
     // Returns the target of this Enemy
     public Transform Target { get; set; }  
@@ -26,8 +23,6 @@ public class StateController : MonoBehaviour
 
     // Returns a reference to this enemy path
     public Path Path { get; set; }
-
-	// public UnityEngine.U2D.Light2DBase FieldOfView => fieldOfView; //A property to return the value to Field Of View
     
 	public Transform Player { get; set; }
 
@@ -42,7 +37,7 @@ public class StateController : MonoBehaviour
         Path = GetComponent<Path>();
         Collider2D = GetComponent<Collider2D>();
         
-        Player = GameObject.FindWithTag("Player").transform;
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 	
     private void Update()

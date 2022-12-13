@@ -20,9 +20,11 @@ public class DecisionDetect : AIDecision
         targetCollider2D = Physics2D.OverlapCircle(controller.transform.position, detectArea, targetMask);
         if (targetCollider2D != null)
         {
+            Debug.Log("target detected");
             controller.Target = targetCollider2D.transform;
             return true;
         }
+        Debug.Log("No target");
 
         return false;		
 	}	

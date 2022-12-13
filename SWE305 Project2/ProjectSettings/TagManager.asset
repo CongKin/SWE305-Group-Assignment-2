@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Character
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -12,12 +14,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Map
   - Level Components
   - Player
   - Enemy
-  - 
-  - 
+  - EnemyProjectile
+  - PlayerProjectile
   - 
   - 
   - 
@@ -42,6 +44,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 2529781343
+    locked: 0
+  - name: Level Components
+    uniqueID: 1958688111
+    locked: 0
+  - name: Player
+    uniqueID: 348716525
+    locked: 0
   - name: Enemy
     uniqueID: 891012027
+    locked: 0
+  - name: Weapon
+    uniqueID: 929774573
+    locked: 0
+  - name: Projectile
+    uniqueID: 3188612907
+    locked: 0
+  - name: Top
+    uniqueID: 1672011793
     locked: 0

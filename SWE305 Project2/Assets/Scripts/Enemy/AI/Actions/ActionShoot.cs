@@ -16,6 +16,7 @@ public class ActionShoot : AIAction
         // Stop enemy
         controller.CharacterMovement.SetHorizontal(0);
         controller.CharacterMovement.SetVertical(0);
+        Debug.Log("Enemy shooting");
 
         // Shoot
         if (controller.CharacterWeapon.CurrentWeapon != null)

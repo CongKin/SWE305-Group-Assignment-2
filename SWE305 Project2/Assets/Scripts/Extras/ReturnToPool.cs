@@ -9,8 +9,8 @@ public class ReturnToPool : MonoBehaviour
     [SerializeField] private LayerMask objectMask;
 	[SerializeField] private float lifeTime = 2f;
 
-    [Header("Effects")]
-    [SerializeField] private ParticleSystem impactPS;
+    // [Header("Effects")]
+    // [SerializeField] private ParticleSystem impactPS;
 
     private Projectile projectile;    
 
@@ -39,8 +39,8 @@ public class ReturnToPool : MonoBehaviour
                 projectile.DisableProjectile();
             }
 
-            impactPS.Play();
-            Invoke(nameof(Return), impactPS.main.duration);
+            // impactPS.Play();
+            // Invoke(nameof(Return), impactPS.main.duration);
         }
     }
 

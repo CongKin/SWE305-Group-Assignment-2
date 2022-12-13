@@ -9,7 +9,6 @@ public class DecisionCanSeePlayer : AIDecision
     public LayerMask obstacleMask;
     
     public float viewDistance;
-    public float viewAngle;
 
     public override bool Decide(StateController controller)
     {
@@ -19,24 +18,17 @@ public class DecisionCanSeePlayer : AIDecision
 
     private bool CanSeePlayer(StateController controller)
     {
-        float distanceToPlayer = (controller.Player.position - controller.transform.position).sqrMagnitude;
-
-        if(distanceToPlayer < Mathf.Pow(viewDistance, 2))
+        // float distanceToPlayer = (controller.Player.position - controller.transform.position).sqrMagnitude;
+        float distanceToPlayer = Vector2.Distance(controller.transform.position, controller.Player.transform.position);
+    
+        if(distanceToPlayer < viewDistance)
         {
-            Vector2 directionToPlayer = (controller.Player.position - controller.transform.position).normalized;
-            Vector2 faceDirection = controller.CharacterFlip.FacingRight ? Vector2.right : Vector2.left;
-            float angleBetweenEnemyAndPlayer = Vector2.Angle(faceDirection, directionToPlayer);
-
-            if (angleBetweenEnemyAndPlayer < viewAngle / 2f)
-            {
-                if (!Physics2D.Linecast(controller.transform.position, controller.Player.position, obstacleMask))
-                {
-                    controller.Target = controller.Player;
-                    return true;
-                }
-            }
+            Debug.Log("Can See Player");
+            controller.Target = controller.Player;
+            return true;
         }
 
+        Debug.Log("Cannot See Playe");
         controller.Target = null;
         return false;
     }
