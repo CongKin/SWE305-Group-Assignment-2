@@ -6,6 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Inventory UI/UI/MainMenu.unity
+    guid: 1255c5e590e0a3942bbe4893fbf98637
+  - enabled: 1
+    path: Assets/Inventory UI/UI/Settings.unity
+    guid: 1940b0458983cd848a528c74d35668d4
+  - enabled: 1
+    path: Assets/Inventory UI/UI/Levels.unity
+    guid: 093ee47dcd38dbc429252861dbc904b1
+  - enabled: 1
+    path: Assets/Inventory UI/Inventory.unity
+    guid: a9e93b60b8ce2b84781982796b2fc932
+  - enabled: 1
+    path: Assets/Inventory UI/UI/Levels/Level1.unity
+    guid: 5abb26d95894d1a44a07db915ef43643
+  - enabled: 1
+    path: Assets/Inventory UI/UI/Levels/Level2.unity
+    guid: 7a0ac40ee3d72cf4e87dac92249d693d
+  - enabled: 1
+    path: Assets/Inventory UI/UI/Levels/Level3.unity
+    guid: 2fc1fdd44e8fb8446bd93ae7802524a3
+  - enabled: 1
+    path: Assets/Inventory UI/UI/Levels/Level4.unity
+    guid: 8e100f59170f30c469014b81d1630d2a
+  - enabled: 1
+    path: Assets/Inventory UI/UI/Levels/Level5.unity
+    guid: 683ccdae33e06544ab632b29d1dd53b6
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

@@ -13,10 +13,6 @@ public class Inventory {
     public Inventory(Action<Item> useItemAction) {
         this.useItemAction = useItemAction;
         itemList = new List<Item>();
-
-        AddItem(new Item { itemType = Item.ItemType.Sword, amount = 1 });
-        AddItem(new Item { itemType = Item.ItemType.Health, amount = 1 });
-        AddItem(new Item { itemType = Item.ItemType.Mana, amount = 1 });
     }
 
     public void AddItem(Item item) {

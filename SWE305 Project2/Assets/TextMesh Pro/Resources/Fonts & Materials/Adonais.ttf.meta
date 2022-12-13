@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: dab90a45cedf47b4291bd9816c597551
-timeCreated: 1504469842
-licenseType: Store
+guid: a583c92217789424cbafe5824f2f39b2
 TrueTypeFontImporter:
+  externalObjects: {}
   serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: MedievalSharp
   fontNames:
-  - MedievalSharp
+  - Adonais
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
