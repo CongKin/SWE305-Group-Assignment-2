@@ -12,6 +12,8 @@ public class UI_Inventory : MonoBehaviour {
     private Transform itemSlotTemplate;
     private Character player;
 
+    [SerializeField] private GameObject inventoryPanel;
+
     private void Awake() {
         itemSlotContainer = transform.Find("itemSlotContainer");
         itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
@@ -29,6 +31,17 @@ public class UI_Inventory : MonoBehaviour {
         RefreshInventoryItems();
     }
 
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            inventoryPanel.SetActive(true);
+        }
+        else if(Input.GetKeyDown(KeyCode.K))
+        {
+            inventoryPanel.SetActive(false);
+        }
+    }
+
     private void Inventory_OnItemListChanged(object sender, System.EventArgs e) {
         RefreshInventoryItems();
     }
@@ -41,9 +54,9 @@ public class UI_Inventory : MonoBehaviour {
 
         int x = 0;
         int y = 0;
-        float itemSlotCellSize = 50f;
+        float itemSlotCellSize = 75f;
         foreach (Item item in inventory.GetItemList()) {
-            RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
+            RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>(); 
             itemSlotRectTransform.gameObject.SetActive(true);
             
             itemSlotRectTransform.GetComponent<Button_UI>().ClickFunc = () => {
@@ -71,7 +84,6 @@ public class UI_Inventory : MonoBehaviour {
             x++;
             if (x >= 4) {
                 x = 0;
-                y++;
             }
         }
     }

@@ -15,22 +15,37 @@ public class Inventory {
         itemList = new List<Item>();
     }
 
-    public void AddItem(Item item) {
-        if (item.IsStackable()) {
-            bool itemAlreadyInInventory = false;
-            foreach (Item inventoryItem in itemList) {
-                if (inventoryItem.itemType == item.itemType) {
-                    inventoryItem.amount += item.amount;
-                    itemAlreadyInInventory = true;
+    public void AddItem(Item item) 
+    {
+        Item itemInInventory = null;
+        if(item.IsFull())
+        {
+            if (item.IsStackable()) 
+            {
+                bool itemAlreadyInInventory = false;
+                foreach (Item inventoryItem in itemList) 
+                {
+                    if (inventoryItem.itemType == item.itemType) 
+                    {
+                        inventoryItem.amount += item.amount;
+                        itemAlreadyInInventory = true;
+                    }
                 }
-            }
-            if (!itemAlreadyInInventory) {
-                itemList.Add(item);
-            }
-        } else {
+                    if (!itemAlreadyInInventory) 
+                    {
+                        itemList.Add(item);
+                        item.isFull++;
+                    }
+            } 
+            else 
+            {
             itemList.Add(item);
+            item.isFull++;
+            }
+            OnItemListChanged?.Invoke(this, EventArgs.Empty);
         }
-        OnItemListChanged?.Invoke(this, EventArgs.Empty);
+        else
+            Debug.Log("Full");
     }
 
     public void RemoveItem(Item item) {

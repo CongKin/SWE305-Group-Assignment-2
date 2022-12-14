@@ -16,6 +16,7 @@ public class Item {
 
     public ItemType itemType;
     public int amount;
+    public int isFull;
 
 
     public Sprite GetSprite() {
@@ -51,6 +52,13 @@ public class Item {
         case ItemType.Medkit:
             return false;
         }
+    }
+
+    public bool IsFull() {
+        if(isFull > 4)
+            return false;
+        else
+            return true;
     }
 
 }
