@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Quest
 {
-    [SerializeField] public bool isActive;
+    public bool isActive;
+    public bool isAvailable;
 
-    [SerializeField] private string title;
-    [SerializeField] private string description;
-    [SerializeField] public int appleReward;
-    [SerializeField] public int expReward;
+    public string title;
+    public string description;
+    public int appleReward;
+    public int expReward;
 
+    public QuestGoal goal;
 
 }
