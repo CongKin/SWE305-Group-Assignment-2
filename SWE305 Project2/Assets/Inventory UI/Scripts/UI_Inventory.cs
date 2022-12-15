@@ -9,7 +9,9 @@ public class UI_Inventory : MonoBehaviour {
 
     private Inventory inventory;
     private Transform itemSlotContainer;
+    private Transform itemSlotContainerScreen;
     private Transform itemSlotTemplate;
+    private Transform itemSlotTemplateScreen;
     private Character player;
     public static bool showPanel;
 
@@ -87,6 +89,7 @@ public class UI_Inventory : MonoBehaviour {
                 Item duplicateItem = new Item { itemType = item.itemType, amount = item.amount };
                 inventory.RemoveItem(item);
                 ItemWorld.DropItem(player.GetPosition(), duplicateItem);
+                inventory.isFull--;
             };
 
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, -y * itemSlotCellSize);

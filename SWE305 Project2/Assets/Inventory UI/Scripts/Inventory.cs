@@ -6,6 +6,7 @@ using UnityEngine;
 public class Inventory {
 
     public event EventHandler OnItemListChanged;
+    public int isFull;
 
     private List<Item> itemList;
     private Action<Item> useItemAction;
@@ -17,10 +18,7 @@ public class Inventory {
 
     public void AddItem(Item item) 
     {
-        Item itemInInventory = null;
-        if(item.isFull < 4)
-        {
-            if (item.IsStackable()) 
+        if (item.IsStackable()) 
             {
                 bool itemAlreadyInInventory = false;
                 foreach (Item inventoryItem in itemList) 
@@ -34,18 +32,13 @@ public class Inventory {
                     if (!itemAlreadyInInventory) 
                     {
                         itemList.Add(item);
-                        Debug.Log("Add1" + item.isFull);
                     }
             } 
-            else
-            {
-            itemList.Add(item);
-            Debug.Log("Add2" + item.isFull);
-            }
-            OnItemListChanged?.Invoke(this, EventArgs.Empty);
-        }
         else
-            Debug.Log("Full");
+        {
+            itemList.Add(item);
+        }
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void RemoveItem(Item item) {
