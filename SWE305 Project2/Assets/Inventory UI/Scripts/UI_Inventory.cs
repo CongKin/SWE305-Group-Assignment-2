@@ -11,8 +11,10 @@ public class UI_Inventory : MonoBehaviour {
     private Transform itemSlotContainer;
     private Transform itemSlotTemplate;
     private Character player;
+    public static bool showPanel;
 
     [SerializeField] private GameObject inventoryPanel;
+    [SerializeField] private GameObject itemSlot;
 
     private void Awake() {
         itemSlotContainer = transform.Find("itemSlotContainer");
@@ -31,15 +33,31 @@ public class UI_Inventory : MonoBehaviour {
         RefreshInventoryItems();
     }
 
-    private void Update() {
-        if(Input.GetKeyDown(KeyCode.J))
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Tab))
         {
-            inventoryPanel.SetActive(true);
+            if(showPanel)
+            {
+                Show();
+            } else
+            {
+                Close();
+            }
         }
-        else if(Input.GetKeyDown(KeyCode.K))
-        {
-            inventoryPanel.SetActive(false);
-        }
+    }
+
+    public void Show()
+    {
+        inventoryPanel.SetActive(false);
+        itemSlot.SetActive(false);
+        showPanel = false;
+    }
+
+    void Close()
+    {
+        inventoryPanel.SetActive(true);
+        itemSlot.SetActive(true);
+        showPanel = true;
     }
 
     private void Inventory_OnItemListChanged(object sender, System.EventArgs e) {
@@ -58,6 +76,7 @@ public class UI_Inventory : MonoBehaviour {
         foreach (Item item in inventory.GetItemList()) {
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>(); 
             itemSlotRectTransform.gameObject.SetActive(true);
+            Show();
             
             itemSlotRectTransform.GetComponent<Button_UI>().ClickFunc = () => {
                 // Use item
@@ -83,6 +102,7 @@ public class UI_Inventory : MonoBehaviour {
 
             x++;
             if (x >= 4) {
+                y++;
                 x = 0;
             }
         }

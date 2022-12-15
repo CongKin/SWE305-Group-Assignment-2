@@ -54,11 +54,4 @@ public class Item {
         }
     }
 
-    public bool IsFull() {
-        if(isFull > 4)
-            return false;
-        else
-            return true;
-    }
-
 }

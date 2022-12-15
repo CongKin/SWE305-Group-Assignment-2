@@ -18,7 +18,7 @@ public class Inventory {
     public void AddItem(Item item) 
     {
         Item itemInInventory = null;
-        if(item.IsFull())
+        if(item.isFull < 4)
         {
             if (item.IsStackable()) 
             {
@@ -34,13 +34,13 @@ public class Inventory {
                     if (!itemAlreadyInInventory) 
                     {
                         itemList.Add(item);
-                        item.isFull++;
+                        Debug.Log("Add1" + item.isFull);
                     }
             } 
-            else 
+            else
             {
             itemList.Add(item);
-            item.isFull++;
+            Debug.Log("Add2" + item.isFull);
             }
             OnItemListChanged?.Invoke(this, EventArgs.Empty);
         }

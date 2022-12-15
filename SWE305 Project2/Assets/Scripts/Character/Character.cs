@@ -20,7 +20,7 @@ public class Character : MonoBehaviour
     private Inventory inventory;
 
     private void Awake(){
-        Instance = this;    
+        Instance = this;
 
         inventory = new Inventory(UseItem);
         uiInventory.SetPlayer(this);
@@ -30,8 +30,8 @@ public class Character : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider) {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
         if (itemWorld != null){
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroySelf();
+                inventory.AddItem(itemWorld.GetItem());
+                itemWorld.DestroySelf();
         }
     }
 
