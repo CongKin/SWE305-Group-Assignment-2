@@ -8,7 +8,7 @@ public class MeleeWeapon : Weapon
     [SerializeField] private float attackDelay = 0.5f;
 
     private Collider2D damageAreaCollider2D;
-    //private Animator animator;
+    private Animator animator;
     private bool attacking;
 
     private readonly int useMeeleWeapon = Animator.StringToHash("UseMeleeWeapon");
@@ -37,6 +37,7 @@ public class MeleeWeapon : Weapon
             yield break;
         }
 
+        Debug.Log("Melee Weapon");
         // Attack
         attacking = true;
         damageAreaCollider2D.enabled = true;

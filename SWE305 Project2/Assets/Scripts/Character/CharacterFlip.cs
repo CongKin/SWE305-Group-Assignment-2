@@ -53,7 +53,7 @@ public class CharacterFlip : CharacterComponents
     }
 
     // Flips our character by our Weapon Aiming
-    private void FlipToWeaponDirection()
+    public void FlipToWeaponDirection()
     {
         if (characterWeapon != null)
         {

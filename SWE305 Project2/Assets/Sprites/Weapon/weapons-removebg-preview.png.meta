@@ -1,0 +1,2335 @@
+fileFormatVersion: 2
+guid: 6645adf98445d084e9e686f7da1669ef
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 45
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: weapons-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 442
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ac04a6a9a6a5b4d91e4def537b52eb
+      internalID: -1146258253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 442
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dfe80f37c59fe48ae3df0eea035fab
+      internalID: 825431981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 442
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8959bb950a4944b8276a6b53b901fe
+      internalID: -789520020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 442
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06d8b1e8c0f5fa4aa35c9914ac7ccee
+      internalID: 1025602757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 442
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55dc96a1df347ca41aa2172ed8a41e94
+      internalID: 1115707124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 442
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25efe85d481a09540b8c62c63c7d2bb2
+      internalID: -1958640403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 442
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df10438e17d5d0f459a832ea9b7a5dde
+      internalID: 1793575104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 442
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ce935d38437e243ab23fb4d5b1a2c6
+      internalID: 1159506273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 442
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2407f7049476c40ae1658fb1d63cd9
+      internalID: -620987395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 442
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803e8020266324f4d9b48cb3e160284f
+      internalID: 783329549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf5f067dd132fb43b0c9c09d2622298
+      internalID: 1093362472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c89621e0d1a4fd4dae481ec1a9f4363
+      internalID: -606988699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 394
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb3eaab01e24114a835bcd42784ff85
+      internalID: 29603918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a9e2f97ddbab041a556e3d8f727df1
+      internalID: -1199784518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adb48df281d9fa49813415fecd7d926
+      internalID: 439082689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095546cfb43228048a4c69da67db79c5
+      internalID: -1307184643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84eb07251ca65484cb3de436355145f7
+      internalID: -644995706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62179e3972f9374cb4827929cb45839
+      internalID: -898072973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 394
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d85d3e35c3aaf042815f9d0d316e7cd
+      internalID: 6955285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 394
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be57a9aa8f3cad74eb914a308a469f15
+      internalID: 520476857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 345
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660e57bc57cd4fd4b89623e1d0b7693b
+      internalID: 2104311945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 345
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd09102705e29dd48868b12f2a2f7fee
+      internalID: -777899237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 345
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a852921f435bf489f3385cc2f4fdc9
+      internalID: -2098568533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 345
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48901e87e390cae4394d71cd9651f5a1
+      internalID: -664856652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 345
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dcf8be8bd01684682a20428478c799
+      internalID: -335508730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 345
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461417652de21a044abc8325f88aa9cb
+      internalID: -321511123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 345
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f3990b5e8e5dc4e8c1f3e1551a82ee
+      internalID: -1455438393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 345
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd9434d265e9774797b3fe916cba255
+      internalID: 2075336251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 345
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70379139b4c13f047a0057269908a46a
+      internalID: 1687115666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 345
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5346a95ee0211b9499f364f2c86763f2
+      internalID: 1545405870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 297
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b76fca1731ef4296726a5ca5eac95
+      internalID: 1659360110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae8dd074c4f3864dbf57cb6d7b9b55f
+      internalID: -196394671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a736d83928bc4ff48a245342713a2076
+      internalID: 147834479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7ca9ea7ba8c4f419c3ab6f77f6216f
+      internalID: 1286940309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a41a19b56259ee44b9fc0cb78fd3ae2
+      internalID: 1996373368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274d9fdd5b5eeae41a80655ec0682cc2
+      internalID: -237825498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffcbddaabdf846439d3b25ccea98ade
+      internalID: -230610370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab5fee88f6e8714ab2058a41381f6b4
+      internalID: -1325709118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 297
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6e07d3c1c9f9e4cbfef89be71c4ff1
+      internalID: -1910703726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 297
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20a6544e529af54ba96f15870cdeaa1
+      internalID: 483681805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fffc8a3b049b94dba6beb08a113df8
+      internalID: -253359684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53961e551cc33fc448fe1b368e2c49d3
+      internalID: 140468684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c303931bf08f341a7537569a11ba66
+      internalID: -1601415995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b325d93bdb56e4283a23ccf259da00
+      internalID: 1449694291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 248
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3cdc2e4d7bf0e499e8bd29a8286e04
+      internalID: -939205593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4920d4597ed9dc429f19aec0fbae563
+      internalID: 1222538663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caed03ac03b635d4cb31a1ccc6dd74f1
+      internalID: -950101428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c185c7f41f64dcf44979ca917f4907c5
+      internalID: -730004866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 248
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4c4a67ceeaa634fb2c632d11d7fea0
+      internalID: -501042817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 248
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ad9e49d811d2e4a89138dfa3d93f0e
+      internalID: 1457405704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 200
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fd4d9670670184683dae0f9e57bba0
+      internalID: 487626181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 200
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf716e4cf090ac848a06036ecb0a246e
+      internalID: 1160433599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 200
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358abc8225698c84485d0c5b66fe8624
+      internalID: 1882612871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 200
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbd5f0d4b8588342abd7f653ad43931
+      internalID: 504048744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40625c06a2c4c504b8953d53e4598c04
+      internalID: -1793035673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 200
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fe27c5f03b86f408f74b46489af3dc
+      internalID: -1737230198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 200
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98682ea16ac56f4687849d68bb57d0a
+      internalID: -1437688802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 200
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379172a0f39add143845b03d4dd0d220
+      internalID: 1148967963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 200
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f701418c9493e48b7620abb713b43e
+      internalID: -1435412830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 200
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7dbdd44808a8949b07bbb1249780b1
+      internalID: -1833330229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5c3bc3ac5944d4d9e0e031b63507bc
+      internalID: 1833928290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425390eef64f2cc4195ad23d04432dc3
+      internalID: 655886038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae635c86e826fa946aab3b8dcde607cb
+      internalID: -771233842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f49565eff0c2b04292e7eedd0f8043f
+      internalID: 894741363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d083160c1e17043a95a38fb8a9cc29
+      internalID: 577955095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e54c47ec60070a47b3f8a259aa61a1e
+      internalID: 117293318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6806642362d02fb49a854129c4a114f8
+      internalID: 1944756513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8843587b0a8014145ba82618fd407fce
+      internalID: 2126281510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 151
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f324afb53d2a743bd1c2aeadb46f83
+      internalID: -1787157255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 151
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ec6ebe03b1cd44389465e3a29261a8
+      internalID: -260423669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 103
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2409f4d73319f544589bfb6076a1246b
+      internalID: 496093815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3e41adf4a356f41933667d62e5cee7
+      internalID: -1918521829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1437f283e2d4c544392f29b78a47f78a
+      internalID: 244143404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3a2a37c74041a45a719ea7ea3a740e
+      internalID: 1531094578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d092894e091c469478615edc075853db
+      internalID: 1590674058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59d0b839416c1a47978cb70ccce851b
+      internalID: -475311886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_76
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05d2a130d9bdcc4abb418142b3711c4
+      internalID: 866301403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_77
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9894ed6b3c99a80468822970386797ca
+      internalID: -2088369701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_78
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 103
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e4c3fc93bf64c4fa68cd4509150d27
+      internalID: 938153156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_79
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 103
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83ab16a74a30b04e8574ceb2881eb97
+      internalID: -357811691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_80
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 54
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1186a788d94975b43ad930a3862e8c16
+      internalID: -207656465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_81
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 54
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ac8e1c8a9964b46b175ebc9025c4cc
+      internalID: -1240502942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_82
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 54
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd2cc9bb7997524686b9d20e693d671
+      internalID: -1154950564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_83
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 54
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2ac0a20f4c09847a0798f0fd1c9a8c
+      internalID: 403390757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_84
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 54
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c1e55607acdb6409aec700bf7143fd
+      internalID: 1260282822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_85
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 54
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08444f6eed3b45d48a1b705e1197276c
+      internalID: -1404171129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_86
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 54
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5242b715adaaf4c950e56ab519297d
+      internalID: -744479619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_87
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 54
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c29439ffc4f96449c75560dbe5142d
+      internalID: -1717522577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_88
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 54
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6a15cfe82ccdc419aa82b8439dfc7a
+      internalID: -724069436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_89
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 54
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb96036ac817ae44bbfb9e68860456c
+      internalID: 889033568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_90
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddfdf2da741c204a904b9071bbf7d3e
+      internalID: 2022668914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_91
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 6
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61d6c2fc35f95d4b87b4e12278071df
+      internalID: 1079020798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_92
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 5
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4ff02e4ca18b4478e2aa1b805b0cf1
+      internalID: -1039658936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_93
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 6
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21831c75b8ef46489f757f03688c020
+      internalID: 410167405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_94
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 6
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b8e3b72605c6b439e8ec906888d5b7
+      internalID: -1639989665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_95
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 6
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4da1b04924daa44b6975137cb1a848
+      internalID: 1333285080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_96
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 6
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca0d29d456f29a4781cef188b230759
+      internalID: 1099354395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_97
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 6
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea206c9d19c3c894493dcd017dc2b0eb
+      internalID: 385535764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_98
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 6
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8720a8b4872e0064e91f2da4fc40ef46
+      internalID: -765030743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapons-removebg-preview_99
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 6
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb798261cdc6d04f893b1b42c38c8b7
+      internalID: 1352943374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      weapons-removebg-preview_42: -1601415995
+      weapons-removebg-preview_83: 403390757
+      weapons-removebg-preview_94: -1639989665
+      weapons-removebg-preview_93: 410167405
+      weapons-removebg-preview_31: -196394671
+      weapons-removebg-preview_69: -260423669
+      weapons-removebg-preview_91: 1079020798
+      weapons-removebg-preview_45: 1222538663
+      weapons-removebg-preview_50: 487626181
+      weapons-removebg-preview_51: 1160433599
+      weapons-removebg-preview_85: -1404171129
+      weapons-removebg-preview_70: 496093815
+      weapons-removebg-preview_19: 520476857
+      weapons-removebg-preview_34: 1996373368
+      weapons-removebg-preview_14: 439082689
+      weapons-removebg-preview_12: 29603918
+      weapons-removebg-preview_86: -744479619
+      weapons-removebg-preview_79: -357811691
+      weapons-removebg-preview_48: -501042817
+      weapons-removebg-preview_18: 6955285
+      weapons-removebg-preview_87: -1717522577
+      weapons-removebg-preview_16: -644995706
+      weapons-removebg-preview_46: -950101428
+      weapons-removebg-preview_17: -898072973
+      weapons-removebg-preview_59: -1833330229
+      weapons-removebg-preview_75: -475311886
+      weapons-removebg-preview_37: -1325709118
+      weapons-removebg-preview_1: 825431981
+      weapons-removebg-preview_0: -1146258253
+      weapons-removebg-preview_32: 147834479
+      weapons-removebg-preview_55: -1737230198
+      weapons-removebg-preview_21: -777899237
+      weapons-removebg-preview_60: 1833928290
+      weapons-removebg-preview_64: 577955095
+      weapons-removebg-preview_54: -1793035673
+      weapons-removebg-preview_92: -1039658936
+      weapons-removebg-preview_40: -253359684
+      weapons-removebg-preview_33: 1286940309
+      weapons-removebg-preview_39: 483681805
+      weapons-removebg-preview_27: 2075336251
+      weapons-removebg-preview_26: -1455438393
+      weapons-removebg-preview_90: 2022668914
+      weapons-removebg-preview_28: 1687115666
+      weapons-removebg-preview_5: -1958640403
+      weapons-removebg-preview_95: 1333285080
+      weapons-removebg-preview_22: -2098568533
+      weapons-removebg-preview_58: -1435412830
+      weapons-removebg-preview_61: 655886038
+      weapons-removebg-preview_49: 1457405704
+      weapons-removebg-preview_96: 1099354395
+      weapons-removebg-preview_44: -939205593
+      weapons-removebg-preview_63: 894741363
+      weapons-removebg-preview_25: -321511123
+      weapons-removebg-preview_43: 1449694291
+      weapons-removebg-preview_82: -1154950564
+      weapons-removebg-preview_84: 1260282822
+      weapons-removebg-preview_71: -1918521829
+      weapons-removebg-preview_67: 2126281510
+      weapons-removebg-preview_65: 117293318
+      weapons-removebg-preview_30: 1659360110
+      weapons-removebg-preview_15: -1307184643
+      weapons-removebg-preview_2: -789520020
+      weapons-removebg-preview_88: -724069436
+      weapons-removebg-preview_10: 1093362472
+      weapons-removebg-preview_36: -230610370
+      weapons-removebg-preview_9: 783329549
+      weapons-removebg-preview_24: -335508730
+      weapons-removebg-preview_23: -664856652
+      weapons-removebg-preview_47: -730004866
+      weapons-removebg-preview_98: -765030743
+      weapons-removebg-preview_4: 1115707124
+      weapons-removebg-preview_56: -1437688802
+      weapons-removebg-preview_13: -1199784518
+      weapons-removebg-preview_57: 1148967963
+      weapons-removebg-preview_72: 244143404
+      weapons-removebg-preview_7: 1159506273
+      weapons-removebg-preview_66: 1944756513
+      weapons-removebg-preview_3: 1025602757
+      weapons-removebg-preview_53: 504048744
+      weapons-removebg-preview_8: -620987395
+      weapons-removebg-preview_78: 938153156
+      weapons-removebg-preview_6: 1793575104
+      weapons-removebg-preview_97: 385535764
+      weapons-removebg-preview_62: -771233842
+      weapons-removebg-preview_73: 1531094578
+      weapons-removebg-preview_81: -1240502942
+      weapons-removebg-preview_76: 866301403
+      weapons-removebg-preview_38: -1910703726
+      weapons-removebg-preview_29: 1545405870
+      weapons-removebg-preview_11: -606988699
+      weapons-removebg-preview_35: -237825498
+      weapons-removebg-preview_74: 1590674058
+      weapons-removebg-preview_41: 140468684
+      weapons-removebg-preview_89: 889033568
+      weapons-removebg-preview_77: -2088369701
+      weapons-removebg-preview_20: 2104311945
+      weapons-removebg-preview_52: 1882612871
+      weapons-removebg-preview_68: -1787157255
+      weapons-removebg-preview_80: -207656465
+      weapons-removebg-preview_99: 1352943374
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

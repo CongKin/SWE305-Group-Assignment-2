@@ -2,11 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Projectile : MonoBehaviour
 {
+    // public UnityEvent shootingEvent;
     [SerializeField] private float speed = 100f;
     [SerializeField] private float acceleration = 0f;
+
+    // CharacterWeapon characterWeapon;
+    // protected readonly int shootingParamater = Animator.StringToHash("Shooting");
 
     // Returns the direction of this projectile    
     public Vector2 Direction { get; set; }
@@ -22,9 +27,10 @@ public class Projectile : MonoBehaviour
     // Internal
     private Rigidbody2D myRigidbody2D;
     private Collider2D collider2D;
-    private SpriteRenderer spriteRenderer;
-	private Vector2 movement;
+    [SerializeField]private SpriteRenderer spriteRenderer;
+	private Vector2 movement; 
 	private bool canMove;
+    [SerializeField]private Animator animator;
     
     private void Awake()
     {
@@ -33,8 +39,9 @@ public class Projectile : MonoBehaviour
         canMove = true;
 		                
         myRigidbody2D = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
         collider2D = GetComponent<Collider2D>();
+        //animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -59,6 +66,7 @@ public class Projectile : MonoBehaviour
     {   
         if (spriteRenderer != null)
         {
+           // Debug.Log("flip");
             spriteRenderer.flipX = !spriteRenderer.flipX;
         }
     }
@@ -67,13 +75,17 @@ public class Projectile : MonoBehaviour
     public void SetDirection(Vector2 newDirection, Quaternion rotation, bool isFacingRight = true)
     {
         Direction = newDirection;
+        //Debug.Log("set diretion");
         
         if (FacingRight != isFacingRight)
         {
+            Debug.Log("Facing not right");
             FlipProjectile();
         }
 
+        
         transform.rotation = rotation;
+        
     }
 
     public void ResetProjectile()
@@ -90,6 +102,8 @@ public class Projectile : MonoBehaviour
 
     public void EnableProjectile()
     {
+        // shootingEvent.Invoke();
+        // characterWeapon.animator.SetTrigger(shootingParameter);
         canMove = true;
         spriteRenderer.enabled = true;
         collider2D.enabled = true;

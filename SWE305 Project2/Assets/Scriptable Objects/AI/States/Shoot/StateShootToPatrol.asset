@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: StateShootToPatrol
   m_EditorClassIdentifier: 
   Actions:
+  - {fileID: 11400000, guid: 32aadc2de14f632479cc1f54a0dec805, type: 2}
   - {fileID: 11400000, guid: e1d98c79ac859e34c9b9f8312ccf10a9, type: 2}
   Transitions:
   - Decision: {fileID: 11400000, guid: b68ce84f075fe0d458b2a0255374f271, type: 2}

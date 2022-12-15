@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330cbd4e364585b4caeff14bd94c7f48, type: 3}
   m_Name: DecisionDetectShoot
   m_EditorClassIdentifier: 
-  detectArea: 3
+  detectArea: 10
   targetMask:
     serializedVersion: 2
     m_Bits: 256

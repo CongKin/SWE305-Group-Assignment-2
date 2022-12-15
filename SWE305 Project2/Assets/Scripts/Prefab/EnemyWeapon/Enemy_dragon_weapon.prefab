@@ -100,7 +100,7 @@ SpriteRenderer:
   m_SortingLayerID: 929774573
   m_SortingLayer: 5
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ac0d8db68b0001d4894f3de6fb0043f0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,7 +108,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7417116641718876279
@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 7417116641718876275}
   - component: {fileID: 7417116641718876274}
   - component: {fileID: 7417116641718876277}
-  - component: {fileID: 7338064779675694013}
   m_Layer: 0
   m_Name: Enemy_dragon_weapon
   m_TagString: Untagged
@@ -161,14 +160,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponName: Dragon
-  timeBtwShots: 0.1
+  timeBtwShots: 0.5
   useMagazine: 1
   magazineSize: 30
   autoReload: 1
   useRecoil: 0
   recoilForce: 1
-  muzzlePS: {fileID: 0}
-  projectileSpawnPosition: {x: 0, y: 0, z: 0}
+  projectileSpawnPosition: {x: 1.005, y: 0, z: 0}
   projectileSpread: {x: 0, y: 0, z: 0}
 --- !u!114 &7417116641718876275
 MonoBehaviour:
@@ -210,23 +208,3 @@ MonoBehaviour:
   objectPrefab: {fileID: 5786766636694386332, guid: d89e18eb369799f42a547506d3e52909, type: 3}
   poolSize: 10
   poolCanExpand: 1
---- !u!95 &7338064779675694013
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7417116641718876279}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 847aa7ca316d3be4c9c5a211a12cf2f1, type: 3}
-  m_Name: StateMeleeAttack1
+  m_Name: StateMeleeAttack(Path)
   m_EditorClassIdentifier: 
   Actions:
   - {fileID: 11400000, guid: 76aae84c71100c846b6be22bd30322a8, type: 2}
   Transitions:
   - Decision: {fileID: 11400000, guid: fa32b033fb99a7b4ab2c916ec78f4c1d, type: 2}
-    TrueState: {fileID: 11400000, guid: a4621444fcd3b9242a3d338a26be6812, type: 2}
+    TrueState: {fileID: 11400000, guid: adb6fa1bbdd66d546ab67f41753db678, type: 2}
     FalseState: {fileID: 11400000, guid: 5f328767d87301f4bba4697b42046927, type: 2}

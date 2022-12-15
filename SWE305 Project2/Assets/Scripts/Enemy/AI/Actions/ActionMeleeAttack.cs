@@ -16,6 +16,7 @@ public class ActionMeleeAttack : AIAction
         controller.CharacterMovement.SetHorizontal(0f);
         controller.CharacterMovement.SetVertical(0f);
         
+        Debug.Log("Melee Attack");
         // Attack
         controller.CharacterWeapon.CurrentWeapon.UseWeapon();
     }
