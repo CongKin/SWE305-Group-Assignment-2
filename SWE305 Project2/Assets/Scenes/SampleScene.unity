@@ -282,6 +282,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115272024}
   m_CullTransparentMesh: 1
+--- !u!1 &173337772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173337774}
+  - component: {fileID: 173337773}
+  m_Layer: 0
+  m_Name: Level Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &173337773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173337772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8b454a4d434b04bafb09e2ac649c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questWindow: {fileID: 87990975}
+  title: {fileID: 338943157}
+  description: {fileID: 787770855}
+  appleText: {fileID: 597538586}
+  expText: {fileID: 1969520301}
+  questList:
+  - quest:
+      isActive: 0
+      title: Kill the dragon
+      description: Hello world testing from the dragon
+      appleReward: 4
+      expReward: 10
+      goal:
+        goalType: 0
+        killTarget: 0
+        gatherObjectType: 0
+        requiredAmount: 3
+        currentAmount: 0
+    npc: {fileID: 208696423}
+--- !u!4 &173337774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173337772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06897222, y: -2.2615738, z: -0.0023548214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &208696423
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +430,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1516028901}
-  - {fileID: 1618492445}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -417,7 +479,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest:
     isActive: 0
-    isAvailable: 1
     title: Kill the Dragon
     description: Heellloo, testing from dragon task
     appleReward: 10
@@ -429,12 +490,7 @@ MonoBehaviour:
       requiredAmount: 0
       currentAmount: 0
   character: {fileID: 0}
-  questWindow: {fileID: 87990975}
-  title: {fileID: 338943157}
-  description: {fileID: 787770855}
-  appleText: {fileID: 597538586}
-  expText: {fileID: 1969520301}
-  animator: {fileID: 0}
+  animator: {fileID: 1516028902}
 --- !u!1 &338943155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1556,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 21300000, guid: 047b929beb10565479851d39b452dfb6, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -2065,13 +2121,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618492438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.982, y: 0.523, z: 0}
+  m_LocalPosition: {x: -2.982, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 519420032}
-  m_Father: {fileID: 208696425}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1618492446
 MonoBehaviour:
