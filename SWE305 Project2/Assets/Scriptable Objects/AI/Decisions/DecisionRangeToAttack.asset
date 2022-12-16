@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ed816255967694ba0f7a718ecc5c4c, type: 3}
   m_Name: DecisionRangeToAttack
   m_EditorClassIdentifier: 
-  minDistanceToAttack: 2
+  minDistanceToAttack: 4

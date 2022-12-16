@@ -12,12 +12,24 @@ public class DecisionAttackCompleted : AIDecision
 
     private bool AttackCompleted(StateController controller)
     {
-        if (controller.CharacterWeapon.CurrentWeapon.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).length
-        > controller.CharacterWeapon.CurrentWeapon.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime)
+        Debug.Log("decision attack completed");
+        if(controller.CharacterWeapon.CurrentWeapon.GetComponentInChildren<Animator>() == null)
         {
-            return true;
+            if(controller.CharacterWeapon.AttackAnimationComplete())
+            {
+                Debug.Log("attack completed");
+                return true;
+            }   
         }
 
+        else{
+            if (controller.CharacterWeapon.CurrentWeapon.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).length
+            > controller.CharacterWeapon.CurrentWeapon.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime)
+            {
+                return true;
+            }
+        }
+        Debug.Log("attack not complete");
         return false;
     }
 }

@@ -11,6 +11,7 @@ public class MeleeAttack : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Incur Damage");
             other.GetComponent<Health>().TakeDamage(damage);
         }
     }

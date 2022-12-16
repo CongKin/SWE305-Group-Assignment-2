@@ -18,7 +18,7 @@ public class DecisionRangeToAttack : AIDecision
         {
             // Get Distance
             float distanceToAttack = (controller.Target.position - controller.transform.position).sqrMagnitude;
-            
+            //Debug.Log("in range");
             // Compare and return if we are close to the target
             return distanceToAttack < Mathf.Pow(minDistanceToAttack, 2);
         }
