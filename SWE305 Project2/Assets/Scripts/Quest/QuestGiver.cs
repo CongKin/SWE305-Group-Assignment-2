@@ -16,7 +16,7 @@ public class QuestGiver : MonoBehaviour
     [SerializeField] private TextMeshProUGUI appleText;
     [SerializeField] private TextMeshProUGUI expText;
 
-    [SerializeField]private Animator animator;
+    [SerializeField] private Animator animator;
 
     private void OnTriggerEnter2D(Collider2D other){
         if(quest.isAvailable == true){

@@ -53,9 +53,13 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 61
 =======
   controlID: 95
+>>>>>>> Stashed changes
+=======
+  controlID: 139
 >>>>>>> Stashed changes
 --- !u!114 &3
 MonoBehaviour:
@@ -77,8 +81,8 @@ MonoBehaviour:
     width: 385.59998
 <<<<<<< Updated upstream
     height: 730.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
 =======
     height: 728.4
@@ -257,9 +261,13 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 62
 =======
   controlID: 18
+>>>>>>> Stashed changes
+=======
+  controlID: 75
 >>>>>>> Stashed changes
 --- !u!114 &10
 MonoBehaviour:
@@ -286,9 +294,13 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 20306
 =======
   controlID: 19
+>>>>>>> Stashed changes
+=======
+  controlID: 76
 >>>>>>> Stashed changes
 --- !u!114 &11
 MonoBehaviour:
@@ -708,26 +720,36 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - Assets/Scripts/Quest
 =======
     - Assets/Sprites/Weapon
 >>>>>>> Stashed changes
+=======
+    - Assets/Cainos/Pixel Art Icon Pack - RPG/Texture/Weapon & Tool
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   - Assets/Scripts/Quest
 =======
   - Assets/Sprites/Weapon
 >>>>>>> Stashed changes
   m_LastFoldersGridSize: -1
+=======
+  - Assets/Cainos/Pixel Art Icon Pack - RPG/Texture/Weapon & Tool
+  m_LastFoldersGridSize: 96
+>>>>>>> Stashed changes
   m_LastProjectPath: E:\GitHub\SWE305-Group_Assignment 2\SWE305-Group-Assignment-2\SWE305
     Project2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     scrollPos: {x: 0, y: 120}
     m_SelectedIDs: bca80000
@@ -738,6 +760,12 @@ MonoBehaviour:
     m_SelectedIDs: 74690000
     m_LastClickedID: 26996
     m_ExpandedIDs: 0000000026690000286900002a6900002c6900002e6900003069000032690000346900003669000038690000566900005c6900007a6e000000ca9a3bffffff7f
+>>>>>>> Stashed changes
+=======
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: d2630000
+    m_LastClickedID: 25554
+    m_ExpandedIDs: 000000000a6300000c6300000e63000010630000126300001463000016630000186300001a6300001c6300001e6300002063000022630000246300002c63000060630000ba63000000ca9a3bffffff7f
 >>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -767,9 +795,13 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_ExpandedIDs: 000000001266000014660000
 =======
     m_ExpandedIDs: 0000000026690000286900002a6900002c6900002e6900003069000032690000346900003669000038690000
+>>>>>>> Stashed changes
+=======
+    m_ExpandedIDs: 000000000a6300000c6300000e63000010630000126300001463000016630000186300001a6300001c6300001e630000206300002263000024630000
 >>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -798,7 +830,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> Stashed changes
     m_ExpandedInstanceIDs: c6230000e2630000686300003264000056a90000
 =======
     m_HadKeyboardFocusLastEvent: 1
@@ -827,8 +863,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_ScrollPosition: {x: 0, y: 166}
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 201
 --- !u!114 &16
@@ -910,6 +946,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       m_SelectedIDs: d6cb0000
       m_LastClickedID: 52182
       m_ExpandedIDs: 9a8cffff668dffff228effff3293ffff2a97ffffacabffff26affffffcbbffffb0c9ffff82ccffffa4f0ffff26f1ffff7cf1ffffb8f1fffff2f1ffff86f2ffffcef2ffff18f3ffff98f3ffff18f4fffffaf4ffff3af5ffff74f5ffff64f8ffffce760000c8a50000baa7000034b40000c6cb0000cacb0000d6cb0000facb000026cc00002ecc000054cc0000
@@ -926,6 +963,15 @@ MonoBehaviour:
         m_Name: 
         m_OriginalName: 
 >>>>>>> Stashed changes
+=======
+      m_SelectedIDs: d2630000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2cfbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+>>>>>>> Stashed changes
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -933,7 +979,11 @@ MonoBehaviour:
           width: 0
           height: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         m_UserData: 52162
+=======
+        m_UserData: 0
+>>>>>>> Stashed changes
 =======
         m_UserData: 0
 >>>>>>> Stashed changes
