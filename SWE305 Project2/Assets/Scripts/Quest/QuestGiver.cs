@@ -5,29 +5,21 @@ using UnityEngine.UI;
 
 public class QuestGiver : MonoBehaviour
 {
-    [SerializeField] public Quest quest;
+    public Quest quest = new Quest();
     [SerializeField] public Character character;
 
-    [SerializeField] public Animator animator;
-
-    private readonly int taskParamater = Animator.StringToHash("task");
-    private readonly int taskProgressParameter = Animator.StringToHash("taskprogress");
-    private readonly int taskDoneParamater = Animator.StringToHash("taskdone");
-    private readonly int taskAcceptParamater = Animator.StringToHash("taskaccept");
+    [SerializeField] public SpriteRenderer spriteRenderer;
 
     private void OnTriggerEnter2D(Collider2D other){
-        if(quest.isActive == true){
-            if(other.CompareTag("Player")){
-                Debug.Log("Detect Player");
-                QuestManger.Instance.openQuestWindow(quest);
-                Debug.Log("Done detect");
+        if(quest.title != ""){
+            if(quest.isActive == false){
+                if(other.CompareTag("Player")){
+                    QuestManger.Instance.openQuestWindow(quest);
+                }
             }
         }
+        
     }
 
-    public void acceptQuest(){
-        QuestManger.Instance.closeQuestWindow();
-        quest.isActive = true;
-        animator.SetBool(taskProgressParameter, true);
-    }
+    
 }

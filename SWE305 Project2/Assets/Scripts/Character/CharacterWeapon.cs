@@ -129,6 +129,19 @@ public class CharacterWeapon : CharacterComponents
         if (character.CharacterAnimator != null)
         {
             character.CharacterAnimator.SetTrigger(shootingParamater);
+            Debug.Log("Update Animation");
         }
-}
+    }
+
+    public bool AttackAnimationComplete()
+    {
+        UpdateAnimations();
+
+        if(character.CharacterAnimator.GetCurrentAnimatorStateInfo(0).length > 
+        character.CharacterAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime)
+        {
+            return true;
+        }
+        return false;
+    }
 }

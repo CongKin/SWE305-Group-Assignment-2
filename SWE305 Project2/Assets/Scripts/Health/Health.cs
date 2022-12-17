@@ -61,6 +61,7 @@ public class Health : MonoBehaviour
     // Take the amount of damage we pass in parameters
     public void TakeDamage(int damage)
     {
+        Debug.Log("Character Take Damage");
         if (CurrentHealth <= 0)
         {
             return;

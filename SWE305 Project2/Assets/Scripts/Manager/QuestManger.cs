@@ -15,23 +15,23 @@ public class QuestManger : Singleton<QuestManger>
     [SerializeField] public List<QuestNPC> questList;
 
     private int currentQuest = 0;
-    private readonly int taskParamater = Animator.StringToHash("task");
+    QuestNPC questNPC= new QuestNPC();
 
-    private void Start(){
+    void Awake(){
         assignQuest();
     }
 
     public void updateQuest(){
+        currentQuest++;
         assignQuest(); 
     }
 
     private void assignQuest(){
         if(questList[currentQuest] != null){
-            QuestNPC questNPC= new QuestNPC();
+            
             questNPC = questList[currentQuest];
 
-            questNPC.quest.isActive = true;
-            questNPC.npc.GetComponent<QuestGiver>().animator.SetBool(taskParamater, true);
+            questNPC.npc.GetComponent<QuestGiver>().spriteRenderer.enabled = true;
             questNPC.npc.GetComponent<QuestGiver>().quest = questNPC.quest;
         }
     }
@@ -46,8 +46,12 @@ public class QuestManger : Singleton<QuestManger>
 
     }
 
-    public void closeQuestWindow(){
+    public void acceptQuest(){
         questWindow.SetActive(false);
+        questNPC.npc.GetComponent<QuestGiver>().quest.isActive = true;
+        questNPC.npc.GetComponent<QuestGiver>().spriteRenderer.enabled = false;
+        QuestHolder.Instance.quest = questNPC.npc.GetComponent<QuestGiver>().quest;
+        questNPC.npc.GetComponent<QuestGiver>().quest = null;
     }
 }
 

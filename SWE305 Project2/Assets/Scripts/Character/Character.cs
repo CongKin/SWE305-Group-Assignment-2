@@ -63,4 +63,14 @@ public class Character : MonoBehaviour
     public CharacterTypes CharacterType => characterType;
     public GameObject CharacterSprite => characterSprite;
     public Animator CharacterAnimator => characterAnimator;
+
+    // public bool AnimationComplete()
+    // {
+    //     if (characterAnimator.GetCurrentAnimatorStateInfo(0).length > characterAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime)
+    //     {
+    //         return true;
+    //     }
+
+    //     return false;
+    // }
 } 
