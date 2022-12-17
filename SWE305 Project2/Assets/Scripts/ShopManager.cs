@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CoinManager1 : MonoBehaviour
+public class ShopManager : MonoBehaviour
 {
     public int[,] shopItems = new int[5,5];
     public float currency;

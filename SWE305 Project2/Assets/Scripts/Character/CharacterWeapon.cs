@@ -7,6 +7,8 @@ public class CharacterWeapon : CharacterComponents
 {   
     public static Action OnStartShooting;
 	
+    protected readonly int shootingParamater = Animator.StringToHash("Shooting");
+
     [Header("Weapon Settings")]
     [SerializeField] private Weapon weaponToUse;
     [SerializeField] private Transform weaponHolderPosition;
@@ -59,6 +61,7 @@ public class CharacterWeapon : CharacterComponents
     
     public void Shoot()
     {
+       //Debug.Log("Character Weapon");
         if (CurrentWeapon == null)
         {
             return;
@@ -70,6 +73,7 @@ public class CharacterWeapon : CharacterComponents
             OnStartShooting?.Invoke();
             UIManager.Instance.UpdateAmmo(CurrentWeapon.CurrentAmmo, CurrentWeapon.MagazineSize);
         }     
+        
     }
 
     // When we stop shooting we stop using our Weapon
@@ -119,4 +123,12 @@ public class CharacterWeapon : CharacterComponents
             UIManager.Instance.UpdateWeaponSprite(CurrentWeapon.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite);
         }
     }
+
+    public void UpdateAnimations()
+    {
+        if (character.CharacterAnimator != null)
+        {
+            character.CharacterAnimator.SetTrigger(shootingParamater);
+        }
+}
 }

@@ -20,8 +20,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] private bool useRecoil = true;
     [SerializeField] private int recoilForce = 30;
 
-    [Header("Effects")] 
-    [SerializeField] private ParticleSystem muzzlePS;
+    // [Header("Effects")] 
+    // [SerializeField] private ParticleSystem muzzlePS;
 
     // Returns the name of this Weapon
     public string WeaponName => weaponName;
@@ -50,14 +50,14 @@ public class Weapon : MonoBehaviour
     // Internal
     private float nextShotTime;
     private CharacterController controller; // Because we need to know the character is facing which side for RECOIL
-    protected Animator animator;
-    private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
+    // [SerializeField]protected Animator animator;
+    // private readonly int weaponUseParameter = Animator.StringToHash("WeaponUse");
 
     protected virtual void Awake()
     {
         WeaponAmmo = GetComponent<WeaponAmmo>();
         WeaponAim = GetComponent<WeaponAim>();       
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     protected virtual void Update()
@@ -69,6 +69,8 @@ public class Weapon : MonoBehaviour
     // Trigger our Weapon in order to use it
     public virtual void UseWeapon()
     {
+        //Debug.Log("use weapon");
+
         StartShooting();
     }
 
@@ -84,12 +86,14 @@ public class Weapon : MonoBehaviour
     // Activates our weapon in order to shoot
     private void StartShooting()
     {
+        //Debug.Log("start shooting");
         if (useMagazine)
         {
             if (WeaponAmmo != null)
             {
                 if (WeaponAmmo.CanUseWeapon())
                 {
+                    //Debug.Log("Can use weapon");
                     RequestShot();
                 }
                 else
@@ -120,9 +124,9 @@ public class Weapon : MonoBehaviour
             Recoil();
         }
          
-        animator.SetTrigger(weaponUseParameter);
+        // animator.SetTrigger(weaponUseParameter);
         WeaponAmmo.ConsumeAmmo(); 
-        muzzlePS.Play();     
+        //muzzlePS.Play();     
     }
 
     // Apply a force to our movement when we shoot

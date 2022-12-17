@@ -15,5 +15,4 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 128
-  viewDistance: 2
-  viewAngle: 12
+  viewDistance: 3

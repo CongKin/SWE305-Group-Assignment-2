@@ -111,6 +111,7 @@ public class WeaponAim : MonoBehaviour
 
     public void SetAim(Vector2 newAim)
     {
+        //Debug.Log("set aim");
         currentAim = newAim;
     }
 

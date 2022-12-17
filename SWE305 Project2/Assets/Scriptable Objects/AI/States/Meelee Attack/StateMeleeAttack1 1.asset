@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847aa7ca316d3be4c9c5a211a12cf2f1, type: 3}
+  m_Name: StateMeleeAttack1 1
+  m_EditorClassIdentifier: 
+  Actions:
+  - {fileID: 11400000, guid: 76aae84c71100c846b6be22bd30322a8, type: 2}
+  Transitions:
+  - Decision: {fileID: 11400000, guid: fa32b033fb99a7b4ab2c916ec78f4c1d, type: 2}
+    TrueState: {fileID: 11400000, guid: a4621444fcd3b9242a3d338a26be6812, type: 2}
+    FalseState: {fileID: 11400000, guid: 5f328767d87301f4bba4697b42046927, type: 2}
