@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Levels : MonoBehaviour
 {
+    [SerializeField] private GameObject Menu;
+    [SerializeField] private GameObject Level;
+
+    public GameObject pauseMenuUI;
+    
     public void Level1(){
         SceneManager.LoadScene("Level1");
     }
@@ -22,7 +27,13 @@ public class Levels : MonoBehaviour
         SceneManager.LoadScene("Level5");
     }
 
-    public void Back(){
-        SceneManager.LoadScene("MainMenu");
+    public void BackMenu(){
+        Level.SetActive(false);
+        Menu.SetActive(true);
+    }
+
+    public void BackPause(){
+        Level.SetActive(false);
+        pauseMenuUI.SetActive(true);
     }
 }

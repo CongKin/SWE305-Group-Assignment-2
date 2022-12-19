@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour
 {
+    [SerializeField] private GameObject Menu;
+    [SerializeField] private GameObject Setting;
+    
     public void Back(){
-        SceneManager.LoadScene("MainMenu");
+        Setting.SetActive(false);
+        Menu.SetActive(true);
     }
 }

@@ -5,12 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject Menu;
+    [SerializeField] private GameObject Level;
+    [SerializeField] private GameObject Setting;
+
+    
     public void PlayGame(){
-        SceneManager.LoadScene("Levels");
+        Level.SetActive(true);
+        Menu.SetActive(false);
     }
 
     public void Settings(){
-        SceneManager.LoadScene("Settings");
+        Setting.SetActive(true);
+        Menu.SetActive(false);
     }
 
     public void ExitGame(){
