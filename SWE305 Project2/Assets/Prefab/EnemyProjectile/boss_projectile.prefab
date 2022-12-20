@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 1024
   lifeTime: 10
   animator: {fileID: 2630267978029893762}
 --- !u!58 &8956579766263008851

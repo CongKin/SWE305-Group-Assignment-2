@@ -1,53 +1,70 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterStats : MonoBehaviour
+public class CharacterStats : Health
 {
-    public int level;
+    public int level = 1;
 
-    public int currHealth;
-    public int maxHealth;
+    public float currHealth;
+    public float maxH;
+    public float currExp;
+    public float maxExp;
 
-    public int currMana;
-    public int maxMana;
+    public float baseDamage;
 
-    public int currExp;
-    public int maxExp;
-
-    public int strength;
-    public int intelligence;
-    public int endurance;
-    public int agility;
-    public int speed;
+    [SerializeField]private float expRatio;
+    [SerializeField]private float healthRatio;
+    [SerializeField]private float dmgRatio;
 
     void Start()
     {
-
+        level = 1;
+        expRatio = 1.4f;
+        healthRatio = 1.3f;
+        dmgRatio= 1.55f;
+        maxExp = 100;
     }
 
     void Update()
     {
-        UpdateUI();
+        UIManager.Instance.UpdateExperience((float)currExp, (float)maxExp, true);
 
         if(currExp >= maxExp)
         {
-            level+=1;
-            // currrentStatPoints += 5;
-            // levelUpIcon.gameObject.SetActive(true);
-            currExp = 0;
+            LevelUp();
         }
     }
 
     public void UpdateUI()
     {
-        // healthBar.value = currHealth;
-        // manaBar.value = currMana;
-        // expBar.value = currExp;
+        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, true);
+        UIManager.Instance.UpdateExperience((float)currExp, (float)maxExp, true);
+        UIManager.Instance.UpdateLevel(level, true);
+    }
 
-        // healthBar.maxValue = maxHealth;
-        // manaBar.maxValue = maxMana;
-        // expBar.maxValue = maxExp;
+    private void LevelUp()
+    {
+        level ++;
+        currHealth *= healthRatio;
+        maxH *= healthRatio;
 
+        CurrentHealth = (float) Math.Ceiling(currHealth);
+        maxHealth = (float) Math.Ceiling(maxH);
+        
+        currExp *= expRatio;
+        maxExp *= expRatio;
+
+        currExp = (float) Math.Ceiling(currExp);
+        maxExp = (float) Math.Ceiling(maxExp);
+        
+        baseDamage *= dmgRatio; 
+        PlayerDamageManager.Instance.UpdateBaseDamage((int) baseDamage);
+        
+        // levelUpIcon.gameObject.SetActive(true);
+        currExp = 0;
+
+        UpdateUI();
     }
 }

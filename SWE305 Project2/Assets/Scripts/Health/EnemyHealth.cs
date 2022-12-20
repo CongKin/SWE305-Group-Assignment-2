@@ -37,6 +37,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (other.CompareTag("Bullet") && other.gameObject.layer != 12) //12 is EnemyProjectile layer
         {
+            damageToApply = PlayerDamageManager.Instance.getBaseDamage();
             TakeDamage(damageToApply);
         }
     }    

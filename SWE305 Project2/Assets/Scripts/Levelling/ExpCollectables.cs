@@ -11,6 +11,8 @@ public class ExpCollectables : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
 
+    [SerializeField] private float expAmt;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -43,7 +45,7 @@ public class ExpCollectables : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<CharacterStats>().currExp += 1;
+            other.gameObject.GetComponent<CharacterStats>().currExp += expAmt;
             Destroy(gameObject);
         }
     }
