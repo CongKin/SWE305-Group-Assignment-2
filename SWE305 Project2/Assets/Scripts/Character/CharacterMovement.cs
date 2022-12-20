@@ -10,7 +10,7 @@ public class CharacterMovement : CharacterComponents
     public float MoveSpeed { get; set; }
 
     // Internal
-    private readonly int movingParamater = Animator.StringToHash("Moving");
+    private readonly int movingParamater = Animator.StringToHash("Walk");
     
     protected override void Start()
     {
