@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PC : MonoBehaviour
 {
     public float runSpeed;
     public float jumpSpeed;
@@ -27,10 +27,10 @@ public class CharacterController : MonoBehaviour
         Flip();
         Run();
         Jump();
-       // Attack();
+        // Attack();
         CheckGrounded();
         SwitchAnimation();
-        
+
     }
 
     void CheckGrounded()
@@ -42,14 +42,14 @@ public class CharacterController : MonoBehaviour
     void Flip()
     {
         bool playerHasXAxisSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
-        if(playerHasXAxisSpeed)
+        if (playerHasXAxisSpeed)
         {
-            if(myRigidbody.velocity.x>0.1f)
+            if (myRigidbody.velocity.x > 0.1f)
             {
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
 
-            if (myRigidbody.velocity.x <- 0.1f)
+            if (myRigidbody.velocity.x < -0.1f)
             {
                 transform.localRotation = Quaternion.Euler(0, 180, 0);
             }
@@ -68,10 +68,10 @@ public class CharacterController : MonoBehaviour
     void Jump()
     {
 
-        if(Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump"))
         {
-            if(isGround)
-             {
+            if (isGround)
+            {
                 myAnim.SetBool("Jump", true);
                 Vector2 jumpVel = new Vector2(0.0f, jumpSpeed);
                 myRigidbody.velocity = Vector2.up * jumpVel;
@@ -79,7 +79,7 @@ public class CharacterController : MonoBehaviour
             }
             else
             {
-                if(canDoubleJump)
+                if (canDoubleJump)
                 {
                     myAnim.SetBool("DoubleJump", true);
                     Vector2 doubleJumpVel = new Vector2(0.0f, doubleJumpSpeed);
@@ -104,14 +104,14 @@ public class CharacterController : MonoBehaviour
         myAnim.SetBool("Idle", false);
         if (myAnim.GetBool("Jump"))
         {
-            if(myRigidbody.velocity.y < 0.0f)
+            if (myRigidbody.velocity.y < 0.0f)
             {
                 myAnim.SetBool("Jump", false);
                 myAnim.SetBool("Fall", true);
             }
 
         }
-        else if(isGround)
+        else if (isGround)
         {
             myAnim.SetBool("Fall", false);
             myAnim.SetBool("Idle", true);
