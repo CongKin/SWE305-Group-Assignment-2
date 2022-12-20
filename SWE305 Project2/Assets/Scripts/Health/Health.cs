@@ -21,9 +21,14 @@ public class Health : MonoBehaviour
     private Collider2D collider2D;
 	private SpriteRenderer spriteRenderer;
 	private EnemyHealth enemyHealth;
+    private Transform transform;
 
     private bool isPlayer;
     private bool shieldBroken;
+    private bool canDestroy = false;
+
+    [SerializeField]private GameObject expPrefab;
+    [SerializeField]private float expCount = 1.0f;
 
     // Controls the current health of the object    
     public float CurrentHealth { get; set; }
@@ -38,6 +43,7 @@ public class Health : MonoBehaviour
         collider2D = GetComponent<Collider2D>();      
         enemyHealth = GetComponent<EnemyHealth>();  
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        transform = GetComponentInChildren<Transform>();
 
         CurrentHealth = initialHealth;
         CurrentShield = initialShield;
@@ -45,6 +51,10 @@ public class Health : MonoBehaviour
         if (character != null)
         {
             isPlayer = character.CharacterType == Character.CharacterTypes.Player;
+            if(isPlayer)
+                Debug.Log("is player");
+            if(!isPlayer)
+                Debug.Log("not player");
         }
          
         UpdateCharacterHealth();
@@ -95,15 +105,38 @@ public class Health : MonoBehaviour
     {
         if (character != null)
         {
-            collider2D.enabled = false;
-            spriteRenderer.enabled = false;
+            if(!isPlayer)
+            {
+                Debug.Log("inside");
+                for (int i = 0; i < expCount; i ++)
+                {
+                    Debug.Log("exp");
+                    GameObject exp = Instantiate(expPrefab);
+                    exp.transform.localPosition = transform.position;
+                    exp.transform.rotation = transform.rotation;
+                }
+                canDestroy = true;
+            }
+            else{
+                Debug.Log("Outside");
+                canDestroy = true;
+            }
 
-            character.enabled = false;
-            controller.enabled = false;
+            if(canDestroy == true)
+            {
+                Debug.Log("not AI");
+                collider2D.enabled = false;
+                spriteRenderer.enabled = false;
+
+                character.enabled = false;
+                controller.enabled = false;
+            }
+        
         }
 
         if (destroyObject)
         {
+            Debug.Log("destroy obj");
             DestroyObject();
         }
     }
