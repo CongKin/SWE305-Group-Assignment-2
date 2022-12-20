@@ -4,96 +4,78 @@ using UnityEngine;
 
 public class CharacterJump : CharacterComponents
 {
-    [SerializeField] private float jumpSpeed = 10f;
-    [SerializeField] private float doubleJumpSpeed = 5f;
+    [SerializeField] private int jumpPower;
+    private float jumpDuration = 0.1f;
 
-    private Rigidbody2D myRigidbody;
-    private BoxCollider2D myFeet;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+
+    private bool isGround;
+    private bool isJumping;
     private bool canDoubleJump;
+    private float jumpTimer;
 
-    private readonly int jumpParamater = Animator.StringToHash("Jump");
-    private readonly int fallParamater = Animator.StringToHash("Fall");
-    private readonly int idleParamater = Animator.StringToHash("Idle");
-    private readonly int doubleJumpParamater = Animator.StringToHash("DoubleJump");
-    private readonly int doubleJumpFallParameter = Animator.StringToHash("DoubleFall");
-
-    void Start()
-    {
-        myRigidbody = GetComponent<Rigidbody2D>();
-        myFeet = GetComponent<BoxCollider2D>();
-    }
-
-    protected override void HandleAbility()
+    protected override void HandleInput()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
-
-        UpdateAnimations();
     }
 
-    private bool CheckGrounded()
+    protected override void HandleAbility()
     {
-        bool isGround;
-        isGround = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        Debug.Log("Character is ground: " + isGround);
-        return isGround;
+        base.HandleAbility();
+
+        if (isJumping)
+        {
+            if(jumpTimer < jumpDuration)
+            {
+                jumpTimer += Time.deltaTime;
+            }else
+            {
+                CheckGrounded();
+                if (isGround)
+                {
+                    StopJump();
+                }
+            }   
+        }
+    }
+
+    void CheckGrounded()
+    {
+        isGround = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.9f, 0.2f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+        //controller.myCapsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
 
     private void Jump()
     {
-        if(CheckGrounded())
+        CheckGrounded();
+
+        if(isGround)
         {
-            character.CharacterAnimator.SetBool(jumpParamater, true);
-            Vector2 jumpVel = new Vector2(0.0f, jumpSpeed);
-            myRigidbody.velocity = Vector2.up * jumpVel;
+            isJumping = true;
+            controller.NormalMovement = false;
+            jumpTimer = 0f;
+            controller.myRigidbody2D.velocity = new Vector2(controller.myRigidbody2D.velocity.x, jumpPower);
             canDoubleJump = true;
+            Debug.Log("Jump");
         }
         else
         {
             if(canDoubleJump)
             {
-                character.CharacterAnimator.SetBool(doubleJumpParamater, true);
-                Vector2 doubleJumpVel = new Vector2(0.0f, doubleJumpSpeed);
-                myRigidbody.velocity = Vector2.up * doubleJumpVel;
+                jumpTimer = 0f;
+                controller.myRigidbody2D.velocity = new Vector2(controller.myRigidbody2D.velocity.x, jumpPower);
                 canDoubleJump = false;
             }
         }
     }
 
-    private void UpdateAnimations()
+    private void StopJump()
     {
-        
-        if (character.CharacterAnimator.GetBool("Jump"))
-        {
-            if(myRigidbody.velocity.y < 0.0f)
-            {
-                character.CharacterAnimator.SetBool(jumpParamater, false);
-                character.CharacterAnimator.SetBool(fallParamater, true);
-            }
-
-        }
-        else if(CheckGrounded())
-        {
-            character.CharacterAnimator.SetBool(fallParamater, false);
-            character.CharacterAnimator.SetBool(idleParamater, true);
-        }
-
-        if (character.CharacterAnimator.GetBool(doubleJumpParamater))
-        {
-            if (myRigidbody.velocity.y < 0.0f)
-            {
-                character.CharacterAnimator.SetBool(doubleJumpParamater, false);
-                character.CharacterAnimator.SetBool(doubleJumpFallParameter, true);
-            }
-
-        }
-        else if (CheckGrounded())
-        {
-            character.CharacterAnimator.SetBool(doubleJumpParamater, false);
-            character.CharacterAnimator.SetBool(idleParamater, true);
-        }
+        isJumping = false;
+        controller.NormalMovement = true;
     }
-
 }
