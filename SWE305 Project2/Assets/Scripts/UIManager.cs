@@ -9,9 +9,10 @@ public class UIManager : Singleton<UIManager>
 {
     [Header("Settings")]
     [SerializeField] private Image healthBar;
-    [SerializeField] private Image shieldBar;
+    [SerializeField] private Image experienceBar;
     [SerializeField] private TextMeshProUGUI currentHealthTMP;
-    [SerializeField] private TextMeshProUGUI currentShieldTMP;
+    [SerializeField] private TextMeshProUGUI currentExperienceTMP;
+    [SerializeField] private TextMeshProUGUI currentLevelTMP;
 
     [Header("Weapon")]
 	[SerializeField] private TextMeshProUGUI currentAmmoTMP;
@@ -22,8 +23,9 @@ public class UIManager : Singleton<UIManager>
 
     private float playerCurrentHealth;
     private float playerMaxHealth;
-    private float playerMaxShield;
-    private float playerCurrentShield;
+    private float playerMaxExperience;
+    private float playerCurrentExperience;
+    private int playerCurrentLevel;
     private bool isPlayer;
 
     private int playerCurrentAmmo;
@@ -34,14 +36,25 @@ public class UIManager : Singleton<UIManager>
         InternalUpdate();
     }
     
-    public void UpdateHealth(float currentHealth, float maxHealth, float currentShield, float maxShield , bool isThisMyPlayer)
+    public void UpdateHealth(float currentHealth, float maxHealth, bool isThisMyPlayer)
     { 
         playerCurrentHealth = currentHealth;
-        playerMaxHealth = maxHealth; 
-        playerCurrentShield = currentShield;
-        playerMaxShield = maxShield;
+        playerMaxHealth = maxHealth;
         isPlayer = isThisMyPlayer;       
 	}
+
+    public void UpdateExperience (float currentExperience, float maxExperience, bool isThisMyPlayer)
+    {
+        playerCurrentExperience = currentExperience;
+        playerMaxExperience = maxExperience;
+        isPlayer = isThisMyPlayer;
+    }
+
+    public void UpdateLevel(int currentLevel, bool isThisMyPlayer)
+    {
+        playerCurrentLevel = currentLevel;
+        isPlayer = isThisMyPlayer;
+    }
 
     public void UpdateWeaponSprite(Sprite weaponSprite)
     { 
@@ -62,8 +75,10 @@ public class UIManager : Singleton<UIManager>
            healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, playerCurrentHealth / playerMaxHealth, 10f * Time.deltaTime);
            currentHealthTMP.text = playerCurrentHealth.ToString() + "/" + playerMaxHealth.ToString(); 
 
-           shieldBar.fillAmount = Mathf.Lerp(shieldBar.fillAmount, playerCurrentShield / playerMaxShield, 10f * Time.deltaTime);
-           currentShieldTMP.text = playerCurrentShield.ToString() + "/" + playerMaxShield.ToString();
+           experienceBar.fillAmount = Mathf.Lerp(experienceBar.fillAmount, playerCurrentExperience / playerMaxExperience, 10f * Time.deltaTime);
+           currentExperienceTMP.text = playerCurrentExperience.ToString() + "/" + playerMaxExperience.ToString();
+
+           currentLevelTMP.text = playerCurrentLevel.ToString();
         }
 
         // Update Ammo

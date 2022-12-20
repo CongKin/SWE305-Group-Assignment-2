@@ -192,7 +192,7 @@ public class Health : MonoBehaviour
         // Update Player health
         if (character != null)
         {
-            UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
+            UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, isPlayer);
         }
     }   
 }
