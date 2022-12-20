@@ -13409,7 +13409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099070526231114630, guid: 30fd1af62255c7f44a2d052d82b4a639, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7099070526231114634, guid: 30fd1af62255c7f44a2d052d82b4a639, type: 3}
       propertyPath: currentState
@@ -16759,6 +16759,10 @@ PrefabInstance:
     - target: {fileID: 1820643530127964491, guid: 44450ce9279fc344d8242703a6432a3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820643530127964540, guid: 44450ce9279fc344d8242703a6432a3d, type: 3}
+      propertyPath: m_Constraints
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1820643530127964540, guid: 44450ce9279fc344d8242703a6432a3d, type: 3}
       propertyPath: m_GravityScale
