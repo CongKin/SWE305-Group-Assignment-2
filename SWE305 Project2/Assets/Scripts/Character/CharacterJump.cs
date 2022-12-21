@@ -47,7 +47,7 @@ public class CharacterJump : CharacterComponents
 
     void CheckGrounded()
     {
-        isGround = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.0f, 0.2f), CapsuleDirection2D.Horizontal, 0, groundLayer);
+        isGround = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(0.5f, 0.2f), CapsuleDirection2D.Horizontal, 0, groundLayer);
         //controller.myCapsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
 
