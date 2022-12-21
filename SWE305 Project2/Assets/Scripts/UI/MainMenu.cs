@@ -11,8 +11,7 @@ public class MainMenu : MonoBehaviour
 
     
     public void PlayGame(){
-        Level.SetActive(true);
-        Menu.SetActive(false);
+        SceneManager.LoadScene("MainLevel");
     }
 
     public void Settings(){

@@ -78,11 +78,9 @@ public class UIManager : Singleton<UIManager>
            experienceBar.fillAmount = Mathf.Lerp(experienceBar.fillAmount, playerCurrentExperience / playerMaxExperience, 10f * Time.deltaTime);
            currentExperienceTMP.text = playerCurrentExperience.ToString() + "/" + playerMaxExperience.ToString();
 
-           currentLevelTMP.text = playerCurrentLevel.ToString();
+           //currentLevelTMP.text = playerCurrentLevel.ToString();
         }
-
-        // Update Ammo
-        currentAmmoTMP.text = playerCurrentAmmo + " / " + playerMaxAmmo;    
+ 
 
         // Update Coins
         coinsTMP.text = CoinManager.Instance.Coins.ToString();   
