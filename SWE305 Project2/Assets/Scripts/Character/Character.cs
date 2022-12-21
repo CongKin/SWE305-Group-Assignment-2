@@ -24,7 +24,7 @@ public class Character : MonoBehaviour
         Instance = this;
 
         inventory = new Inventory(UseItem);
-        uiInventory.SetPlayer(this);
+        //uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
     }
 
