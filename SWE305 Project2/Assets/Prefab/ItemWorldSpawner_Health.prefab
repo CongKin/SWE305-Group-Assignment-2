@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item:
-    itemType: 1
+    itemType: 0
     amount: 1
     isFull: 0
 --- !u!212 &136855247446151105

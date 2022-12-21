@@ -24,7 +24,7 @@ public class Character : MonoBehaviour
         Instance = this;
 
         inventory = new Inventory(UseItem);
-        uiInventory.SetPlayer(this);
+        //uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
     }
 
@@ -46,11 +46,6 @@ public class Character : MonoBehaviour
         case Item.ItemType.Health:
             
             inventory.RemoveItem(new Item { itemType = Item.ItemType.Health, amount = 1 });
-            inventory.isFull--;
-            break;
-        case Item.ItemType.Mana:
-            
-            inventory.RemoveItem(new Item { itemType = Item.ItemType.Mana, amount = 1 });
             inventory.isFull--;
             break;
         }
