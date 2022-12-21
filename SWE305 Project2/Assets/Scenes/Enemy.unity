@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044d8a8c76c612c4e935eb8f382cb8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasGravity: 0
   myRigidbody2D: {fileID: 0}
   myCapsuleCollider2D: {fileID: 0}
 --- !u!114 &273229327
@@ -296,8 +297,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialHealth: 500
   maxHealth: 500
-  initialShield: 5
-  maxShield: 5
   destroyObject: 1
   expPrefab: {fileID: 0}
   expCount: 0
@@ -463,7 +462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099070526231114630, guid: 30fd1af62255c7f44a2d052d82b4a639, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7099070526231114634, guid: 30fd1af62255c7f44a2d052d82b4a639, type: 3}
       propertyPath: currentState
@@ -1077,7 +1076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7099070526231114630, guid: 8182cc0f7d469d54cae7e1989ed65162, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7099070526231114633, guid: 8182cc0f7d469d54cae7e1989ed65162, type: 3}
       propertyPath: animator

@@ -17,4 +17,4 @@ MonoBehaviour:
   obstacleBoxCheckSize: {x: 2, y: 2}
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
