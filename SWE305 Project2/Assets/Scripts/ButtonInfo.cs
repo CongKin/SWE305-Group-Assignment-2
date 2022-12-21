@@ -12,7 +12,7 @@ public class ButtonInfo : MonoBehaviour
 
 
     // Update is called once per frame
-    void Start()
+    void Update()
     {
         PriceTxt.text = "Price: $" + ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
         QuantityTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID].ToString();
