@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7407452319421483766}
   - component: {fileID: 5584179006305619828}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 5786766636694386329}
   - component: {fileID: 5786766636694386330}
   - component: {fileID: 5786766636694386331}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Arrow_projectile1
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -197,6 +197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectMask:
     serializedVersion: 2
-    m_Bits: 1472
+    m_Bits: 1216
   lifeTime: 2
   animator: {fileID: 0}

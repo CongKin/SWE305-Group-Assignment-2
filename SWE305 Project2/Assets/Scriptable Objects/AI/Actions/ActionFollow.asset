@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec8f8e719eb7b942a72e361ee0320b9, type: 3}
   m_Name: ActionFollow
   m_EditorClassIdentifier: 
-  minDistanceToFollow: 2
+  minDistanceToFollow: 0

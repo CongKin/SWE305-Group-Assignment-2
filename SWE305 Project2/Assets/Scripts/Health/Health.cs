@@ -63,6 +63,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Debug.Log("Character Take Damage");
+        Debug.Log("damage" + damage);
         Debug.Log(CurrentHealth);
         if (CurrentHealth <= 0)
         {

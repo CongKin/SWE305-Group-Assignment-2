@@ -20,7 +20,7 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hasGravity = true;
+        //hasGravity = true;
         NormalMovement = true;
         myRigidbody2D = GetComponent<Rigidbody2D>();
         myCapsuleCollider2D = GetComponent<CapsuleCollider2D>();

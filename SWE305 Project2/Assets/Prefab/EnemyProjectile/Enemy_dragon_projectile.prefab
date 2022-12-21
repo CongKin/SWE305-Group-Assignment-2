@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1285702338549551287}
   - component: {fileID: 961132714540922920}
   - component: {fileID: 868550779876873674}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 5786766636694386329}
   - component: {fileID: 5786766636694386330}
   - component: {fileID: 5786766636694386331}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: Enemy_dragon_projectile
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -218,6 +218,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectMask:
     serializedVersion: 2
-    m_Bits: 1472
+    m_Bits: 1216
   lifeTime: 2
   animator: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3122004027323630889}
   - component: {fileID: 7092145356716257008}
   - component: {fileID: 2453174567986759228}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 891012027
-  m_SortingLayer: 0
+  m_SortingLayerID: 538930337
+  m_SortingLayer: 7
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 6e4460827a2fe4f43b83b4c9c55ec1dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 5805245132779017211}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ed704e9f7d53d444baf9483489ebfbe1, type: 2}
+  m_Controller: {fileID: 9100000, guid: a7d88f306e973364dbc4437e0f0e68af, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,7 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7099070525026303087}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7099070525026303072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.16, y: -0.13, z: 0}
+  m_LocalPosition: {x: -0.44, y: -0.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -227,8 +227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterType: 1
-  characterSprite: {fileID: 0}
-  characterAnimator: {fileID: 0}
+  characterSprite: {fileID: 5805245132779017211}
+  characterAnimator: {fileID: 2453174567986759228}
   uiInventory: {fileID: 0}
 --- !u!114 &7099070526231114637
 MonoBehaviour:
@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044d8a8c76c612c4e935eb8f382cb8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasGravity: 0
   myRigidbody2D: {fileID: 0}
   myCapsuleCollider2D: {fileID: 0}
 --- !u!114 &7099070526231114638
@@ -286,7 +287,7 @@ MonoBehaviour:
   initialHealth: 10
   maxHealth: 10
   destroyObject: 0
-  expPrefab: {fileID: 0}
+  expPrefab: {fileID: 1383809626088948186, guid: 5c320b65e0f5032408e3be3928d5c1a4, type: 3}
   expCount: 1
 --- !u!114 &7099070526231114626
 MonoBehaviour:
