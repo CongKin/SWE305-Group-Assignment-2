@@ -306,6 +306,7 @@ MonoBehaviour:
   destroyObject: 1
   expPrefab: {fileID: 1383809626088948186, guid: 5c320b65e0f5032408e3be3928d5c1a4, type: 3}
   expCount: 1
+  killTarget: 0
 --- !u!114 &1820643530127964532
 MonoBehaviour:
   m_ObjectHideFlags: 0

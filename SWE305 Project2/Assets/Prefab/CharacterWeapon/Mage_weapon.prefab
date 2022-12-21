@@ -98,7 +98,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929774573
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 7417116641718876274}
   - component: {fileID: 7417116641718876277}
   m_Layer: 0
-  m_Name: Enemy_dragon_weapon
+  m_Name: Mage_weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8188476df43d74eaf3b5001116d1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName: Dragon
+  weaponName: Mage
   timeBtwShots: 0.5
   useMagazine: 1
   magazineSize: 30
@@ -205,6 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c2e640a2248154d9253f012498bbe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 5786766636694386332, guid: d89e18eb369799f42a547506d3e52909, type: 3}
+  objectPrefab: {fileID: 5786766636694386332, guid: aaa8b57e1bed7044f907591d8429b203, type: 3}
   poolSize: 10
   poolCanExpand: 1

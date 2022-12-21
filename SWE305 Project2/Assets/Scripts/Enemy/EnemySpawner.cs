@@ -23,15 +23,21 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]private float bigSwarmerYmin = 2.0f;
     [SerializeField]private float bigSwarmerYmax = 2.0f;
 
+    private bool stopSpawn;
+
     void Start()
     {
-        StartCoroutine(spawnEnemy(swarmerInterval, swarmerWave, swarmerPrefab));
-        StartCoroutine(spawnEnemy(bigSwarmerInterval, bigSwarmerWave, bigSwarmerPrefab));
+        stopSpawn = false;
     }
 
     private IEnumerator spawnEnemy(float interval, float wave, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
+
+        if(stopSpawn)
+        {
+            wave = 0;
+        }
 
         if(enemy == swarmerPrefab)
         {
@@ -46,12 +52,27 @@ public class EnemySpawner : MonoBehaviour
                 (Random.Range(bigSwarmerXmin,bigSwarmerXmax), Random.Range(bigSwarmerYmin,bigSwarmerYmax), 0), Quaternion.identity);
         }
         
-
         wave--;
         if (wave > 0)
         {
+            Debug.Log("spawn");
             StartCoroutine(spawnEnemy(interval,wave,enemy));
         }
+
+
+    }
+
+    public void StartSpawn()
+    {
+        Debug.Log("start spawn");
+        StartCoroutine(spawnEnemy(swarmerInterval, swarmerWave, swarmerPrefab));
+        StartCoroutine(spawnEnemy(bigSwarmerInterval, bigSwarmerWave, bigSwarmerPrefab));
+    }
+
+    public void StopSpawn()
+    {
+        Debug.Log("stop spawn");
+        stopSpawn = true;
     }
 
 }

@@ -62,7 +62,7 @@ public class CharacterJump : CharacterComponents
             animator.SetBool("Jump", true);
             controller.myRigidbody2D.velocity = new Vector2(controller.myRigidbody2D.velocity.x, jumpPower);
             canDoubleJump = true;
-            Debug.Log("Jump");
+            //Debug.Log("Jump");
         }
         else
         {

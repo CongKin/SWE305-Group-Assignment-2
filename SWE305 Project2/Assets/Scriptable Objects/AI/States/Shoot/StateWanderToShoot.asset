@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 847aa7ca316d3be4c9c5a211a12cf2f1, type: 3}
-  m_Name: StateShootToWander
+  m_Name: StateWanderToShoot
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 11400000, guid: e1d98c79ac859e34c9b9f8312ccf10a9, type: 2}
+  - {fileID: 11400000, guid: f90c91f54c6a51549ba71c864975504c, type: 2}
   Transitions:
   - Decision: {fileID: 11400000, guid: b68ce84f075fe0d458b2a0255374f271, type: 2}
-    TrueState: {fileID: 11400000, guid: 5f328767d87301f4bba4697b42046927, type: 2}
-    FalseState: {fileID: 11400000, guid: 2a94b5e3452319043894c61e920c3d9b, type: 2}
+    TrueState: {fileID: 11400000, guid: ee62c7a7788b53d4180668209ad02a98, type: 2}
+    FalseState: {fileID: 11400000, guid: 5f328767d87301f4bba4697b42046927, type: 2}

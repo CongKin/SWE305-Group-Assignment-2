@@ -151,13 +151,12 @@ GameObject:
   - component: {fileID: 7099070526231114637}
   - component: {fileID: 7099070526231114638}
   - component: {fileID: 7099070526231114639}
-  - component: {fileID: 7099070526231114624}
   - component: {fileID: 7099070526231114625}
   - component: {fileID: 7099070526231114626}
   - component: {fileID: 7099070526231114627}
   - component: {fileID: 7099070526231114633}
   m_Layer: 11
-  m_Name: Enemy Long Range
+  m_Name: Enemy Long Range Wander
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e7974eccbb1604438db4e6915ad57d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: d4099875c40e0b94ab3c7c283c9f81e0, type: 2}
+  currentState: {fileID: 11400000, guid: 2a94b5e3452319043894c61e920c3d9b, type: 2}
   remainState: {fileID: 11400000, guid: 5f328767d87301f4bba4697b42046927, type: 2}
 --- !u!50 &7099070526231114635
 Rigidbody2D:
@@ -273,22 +272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flipMode: 0
   threshold: 0.1
---- !u!114 &7099070526231114624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7099070526231114630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668dc8c1d749764489b002728bb6858b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path:
-  - {x: 8, y: 0, z: 0}
-  - {x: -8, y: 0, z: 0}
-  minDistanceToPoint: 0.1
 --- !u!114 &7099070526231114625
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,6 +28,8 @@ public class Health : MonoBehaviour
     // Controls the current health of the object    
     public float CurrentHealth { get; set; }
 
+    public KillTarget killTarget;
+
     private void Awake()
     {
         character = GetComponent<Character>();
@@ -42,10 +44,10 @@ public class Health : MonoBehaviour
         if (character != null)
         {
             isPlayer = character.CharacterType == Character.CharacterTypes.Player;
-            if(isPlayer)
-                Debug.Log("is player");
-            if(!isPlayer)
-                Debug.Log("not player");
+            // if(isPlayer)
+            //     Debug.Log("is player");
+            // if(!isPlayer)
+            //     Debug.Log("not player");
         }
          
         UpdateCharacterHealth();
@@ -96,6 +98,8 @@ public class Health : MonoBehaviour
                     exp.transform.localPosition = transform.position;
                     exp.transform.rotation = transform.rotation;
                 }
+
+                //QuestHolder.Instance.quest.goal.EnemyKilled(killTarget);
                 canDestroy = true;
             }
             else{
@@ -168,4 +172,5 @@ public class Health : MonoBehaviour
             UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, isPlayer);
         }
     }   
+
 }

@@ -213,7 +213,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!114 &7099070526231114636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044d8a8c76c612c4e935eb8f382cb8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasGravity: 0
+  hasGravity: 1
   myRigidbody2D: {fileID: 0}
   myCapsuleCollider2D: {fileID: 0}
 --- !u!114 &7099070526231114638
@@ -286,9 +286,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialHealth: 10
   maxHealth: 10
-  destroyObject: 0
+  destroyObject: 1
   expPrefab: {fileID: 1383809626088948186, guid: 5c320b65e0f5032408e3be3928d5c1a4, type: 3}
   expCount: 1
+  killTarget: 2
 --- !u!114 &7099070526231114626
 MonoBehaviour:
   m_ObjectHideFlags: 0

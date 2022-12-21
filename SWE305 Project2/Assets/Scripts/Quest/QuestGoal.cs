@@ -41,7 +41,7 @@ public enum GoalType{
 public enum KillTarget{
     dragon,
     archer,
-    swear,
+    spear,
     mud,
     boss
 }
