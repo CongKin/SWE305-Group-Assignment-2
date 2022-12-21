@@ -31,13 +31,13 @@ public class Character : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider) {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
         if (itemWorld != null){
-                if(inventory.isFull<4){
+                if(inventory.isFull<8){
                     inventory.isFull++;
                     inventory.AddItem(itemWorld.GetItem());
                     itemWorld.DestroySelf();
                 }
                 else
-                    Debug.Log("Full"+inventory.isFull);
+                    Debug.Log("Full");
         }
     }
 
@@ -46,11 +46,6 @@ public class Character : MonoBehaviour
         case Item.ItemType.Health:
             
             inventory.RemoveItem(new Item { itemType = Item.ItemType.Health, amount = 1 });
-            inventory.isFull--;
-            break;
-        case Item.ItemType.Mana:
-            
-            inventory.RemoveItem(new Item { itemType = Item.ItemType.Mana, amount = 1 });
             inventory.isFull--;
             break;
         }

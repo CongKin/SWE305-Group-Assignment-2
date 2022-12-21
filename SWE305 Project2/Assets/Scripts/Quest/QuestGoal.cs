@@ -40,7 +40,10 @@ public enum GoalType{
 
 public enum KillTarget{
     dragon,
-    bow
+    archer,
+    swear,
+    mud,
+    boss
 }
 
 public enum GatherObjectType{

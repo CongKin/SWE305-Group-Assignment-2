@@ -10,6 +10,8 @@ public class CharacterController : MonoBehaviour
     // Returns if this character can move normally (When dashing we can't)
     public bool NormalMovement { get; set; }
 	
+    public bool hasGravity;
+
     // Internal
 	public Rigidbody2D myRigidbody2D;
     public CapsuleCollider2D myCapsuleCollider2D;
@@ -18,6 +20,7 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        hasGravity = true;
         NormalMovement = true;
         myRigidbody2D = GetComponent<Rigidbody2D>();
         myCapsuleCollider2D = GetComponent<CapsuleCollider2D>();
@@ -30,15 +33,26 @@ public class CharacterController : MonoBehaviour
 
         if (NormalMovement)
         {
-            MoveCharacter();
+            if(hasGravity)
+            {
+                MoveCharacter();
+            }else
+            {
+                MoveCharacterWithoutGravity();
+            }
         }
     }
 	
     private void MoveCharacter()
     {    
-        Vector2 currentMovePosition = myRigidbody2D.position + CurrentMovement * Time.fixedDeltaTime;
-        myRigidbody2D.velocity = CurrentMovement;
+        myRigidbody2D.velocity = new Vector2(CurrentMovement.x, myRigidbody2D.velocity.y);
 	}
+
+    private void MoveCharacterWithoutGravity()
+    {
+        Vector2 currentMovePosition = myRigidbody2D.position + CurrentMovement * Time.fixedDeltaTime;
+        myRigidbody2D.MovePosition(currentMovePosition);
+    }
 
     public void ApplyRecoil(Vector2 recoilDirection, float recoilForce)
     {

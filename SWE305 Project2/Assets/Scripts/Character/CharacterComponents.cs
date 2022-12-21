@@ -46,7 +46,7 @@ public class CharacterComponents : MonoBehaviour
         if (character.CharacterType == Character.CharacterTypes.Player)
         {
             horizontalInput = Input.GetAxisRaw("Horizontal");
-            verticalInput = Input.GetAxisRaw("Vertical");
+            //verticalInput = Input.GetAxisRaw("Vertical");
         }
     }
 }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 1536
   viewDistance: 3
