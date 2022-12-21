@@ -11,7 +11,8 @@ public class CharacterController : MonoBehaviour
     public bool NormalMovement { get; set; }
 	
     // Internal
-	private Rigidbody2D myRigidbody2D;
+	public Rigidbody2D myRigidbody2D;
+    public CapsuleCollider2D myCapsuleCollider2D;
 	private Vector2 recoilMovement;
 	
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class CharacterController : MonoBehaviour
     {
         NormalMovement = true;
         myRigidbody2D = GetComponent<Rigidbody2D>();
+        myCapsuleCollider2D = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
@@ -35,7 +37,7 @@ public class CharacterController : MonoBehaviour
     private void MoveCharacter()
     {    
         Vector2 currentMovePosition = myRigidbody2D.position + CurrentMovement * Time.fixedDeltaTime;
-        myRigidbody2D.MovePosition(currentMovePosition);
+        myRigidbody2D.velocity = CurrentMovement;
 	}
 
     public void ApplyRecoil(Vector2 recoilDirection, float recoilForce)
@@ -54,6 +56,11 @@ public class CharacterController : MonoBehaviour
     {
         CurrentMovement = newPosition;
 	}
+
+    public float GetVelocityX()
+    {
+        return myRigidbody2D.velocity.x;
+    }
 
     private void Recoil()
     {

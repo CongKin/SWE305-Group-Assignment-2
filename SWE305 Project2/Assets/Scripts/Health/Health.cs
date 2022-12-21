@@ -6,12 +6,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {    
     [Header("Health")]
-    [SerializeField] private float initialHealth = 10f;
-    [SerializeField] private float maxHealth = 10f;
-
-    [Header("Shield")] 
-    [SerializeField] private float initialShield = 5f;
-    [SerializeField] private float maxShield = 5f;
+    [SerializeField] protected float initialHealth = 10f;
+    [SerializeField] protected float maxHealth = 10f;
 
     [Header("Settings")] 
     [SerializeField] private bool destroyObject;
@@ -21,16 +17,17 @@ public class Health : MonoBehaviour
     private Collider2D collider2D;
 	private SpriteRenderer spriteRenderer;
 	private EnemyHealth enemyHealth;
+    private Transform transform;
 
     private bool isPlayer;
-    private bool shieldBroken;
+    private bool canDestroy = false;
+
+    [SerializeField]private GameObject expPrefab;
+    [SerializeField]private float expCount = 1.0f;
 
     // Controls the current health of the object    
     public float CurrentHealth { get; set; }
 
-    // Returns the current health of this character
-    public float CurrentShield { get; set; }
-    
     private void Awake()
     {
         character = GetComponent<Character>();
@@ -38,13 +35,17 @@ public class Health : MonoBehaviour
         collider2D = GetComponent<Collider2D>();      
         enemyHealth = GetComponent<EnemyHealth>();  
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        transform = GetComponentInChildren<Transform>();
 
         CurrentHealth = initialHealth;
-        CurrentShield = initialShield;
 
         if (character != null)
         {
             isPlayer = character.CharacterType == Character.CharacterTypes.Player;
+            if(isPlayer)
+                Debug.Log("is player");
+            if(!isPlayer)
+                Debug.Log("not player");
         }
          
         UpdateCharacterHealth();
@@ -62,21 +63,9 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Debug.Log("Character Take Damage");
+        Debug.Log(CurrentHealth);
         if (CurrentHealth <= 0)
         {
-            return;
-        }
-
-        if (!shieldBroken && character != null)
-        {
-            CurrentShield -= damage;
-
-            UpdateCharacterHealth();
-
-            if (CurrentShield <= 0)
-            {
-                shieldBroken = true;
-            }
             return;
         }
         
@@ -86,6 +75,7 @@ public class Health : MonoBehaviour
 
         if (CurrentHealth <= 0)
         {
+            Debug.Log("Die");
             Die();
         }
     }
@@ -95,15 +85,38 @@ public class Health : MonoBehaviour
     {
         if (character != null)
         {
-            collider2D.enabled = false;
-            spriteRenderer.enabled = false;
+            if(!isPlayer)
+            {
+                Debug.Log("inside");
+                for (int i = 0; i < expCount; i ++)
+                {
+                    Debug.Log("exp");
+                    GameObject exp = Instantiate(expPrefab);
+                    exp.transform.localPosition = transform.position;
+                    exp.transform.rotation = transform.rotation;
+                }
+                canDestroy = true;
+            }
+            else{
+                Debug.Log("Outside");
+                canDestroy = true;
+            }
 
-            character.enabled = false;
-            controller.enabled = false;
+            if(canDestroy == true)
+            {
+                Debug.Log("not AI");
+                collider2D.enabled = false;
+                spriteRenderer.enabled = false;
+
+                character.enabled = false;
+                controller.enabled = false;
+            }
+        
         }
 
         if (destroyObject)
         {
+            Debug.Log("destroy obj");
             DestroyObject();
         }
     }
@@ -123,10 +136,7 @@ public class Health : MonoBehaviour
         gameObject.SetActive(true);
 
         CurrentHealth = initialHealth;
-        CurrentShield = initialShield;
 
-        shieldBroken = false;
-       
         UpdateCharacterHealth();
     }
 
@@ -136,11 +146,6 @@ public class Health : MonoBehaviour
         UpdateCharacterHealth();
     }
 	
-    public void GainShield(int amount)
-    {
-        CurrentShield = Mathf.Min(CurrentShield + amount, maxShield);
-        UpdateCharacterHealth();
-    }
 	
     // If destroyObject is selected, we destroy this game object
     private void DestroyObject()
@@ -159,7 +164,7 @@ public class Health : MonoBehaviour
         // Update Player health
         if (character != null)
         {
-            UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, CurrentShield, maxShield, isPlayer);
+            UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, isPlayer);
         }
     }   
 }

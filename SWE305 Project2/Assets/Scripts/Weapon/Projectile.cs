@@ -79,7 +79,7 @@ public class Projectile : MonoBehaviour
         
         if (FacingRight != isFacingRight)
         {
-            Debug.Log("Facing not right");
+            //Debug.Log("Facing not right");
             FlipProjectile();
         }
 

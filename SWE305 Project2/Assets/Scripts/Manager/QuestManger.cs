@@ -51,6 +51,8 @@ public class QuestManger : Singleton<QuestManger>
         questNPC.npc.GetComponent<QuestGiver>().quest.isActive = true;
         questNPC.npc.GetComponent<QuestGiver>().spriteRenderer.enabled = false;
         QuestHolder.Instance.quest = questNPC.npc.GetComponent<QuestGiver>().quest;
+        QuestHolder.Instance.updateQuestUI();
+        QuestHolder.Instance.doneIcon.SetActive(false);
         questNPC.npc.GetComponent<QuestGiver>().quest = null;
     }
 }

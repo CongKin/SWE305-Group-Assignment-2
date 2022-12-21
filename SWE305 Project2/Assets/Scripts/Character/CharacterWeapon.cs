@@ -129,7 +129,7 @@ public class CharacterWeapon : CharacterComponents
         if (character.CharacterAnimator != null)
         {
             character.CharacterAnimator.SetTrigger(shootingParamater);
-            Debug.Log("Update Animation");
+            //Debug.Log("Update Animation");
         }
     }
 
