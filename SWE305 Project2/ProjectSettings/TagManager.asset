@@ -19,8 +19,8 @@ TagManager:
   - 
   - Player
   - Enemy
-  - 
-  - 
+  - Player Projectile
+  - Enemy Projectile
   - 
   - 
   - 
@@ -43,21 +43,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 3120563683
-    locked: 0
-  - name: Item
-    uniqueID: 3718611711
-    locked: 0
-  - name: Wall
-    uniqueID: 3698009847
+  - name: Background
+    uniqueID: 3675025067
     locked: 0
   - name: Floor
     uniqueID: 3015258169
     locked: 0
-  - name: Background
-    uniqueID: 3675025067
+  - name: Wall
+    uniqueID: 3698009847
+    locked: 0
+  - name: Item
+    uniqueID: 3718611711
+    locked: 0
+  - name: NPC
+    uniqueID: 2064411385
+    locked: 0
+  - name: Player
+    uniqueID: 3120563683
     locked: 0
   - name: Enemy
     uniqueID: 538930337
+    locked: 0
+  - name: Projectile
+    uniqueID: 457745517
+    locked: 0
+  - name: Weapon
+    uniqueID: 4238320557
+    locked: 0
+  - name: Top
+    uniqueID: 378978479
     locked: 0

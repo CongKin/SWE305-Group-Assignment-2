@@ -141,13 +141,13 @@ GameObject:
   - component: {fileID: 273229331}
   - component: {fileID: 273229330}
   - component: {fileID: 273229334}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CharacterDemo
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &273229324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,7 +648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1820643530127964490, guid: 6143602ed197ea648968f9b4e2092109, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1820643530127964491, guid: 6143602ed197ea648968f9b4e2092109, type: 3}
       propertyPath: m_RootOrder
@@ -710,7 +710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627344429}
   - component: {fileID: 1627344428}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1954823469}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
