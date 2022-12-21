@@ -18,6 +18,7 @@ public class PlayerDamage : MonoBehaviour
     {
         if (other.CompareTag("Bullet") && other.gameObject.layer != 13) //13 is PlayerProjectile layer
         {
+            Debug.Log("damage to apply" + damageToApply);
             playerHealth.TakeDamage(damageToApply);
         }
     }

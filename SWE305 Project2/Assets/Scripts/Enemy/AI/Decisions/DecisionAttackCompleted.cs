@@ -29,7 +29,7 @@ public class DecisionAttackCompleted : AIDecision
                 return true;
             }
         }
-        Debug.Log("attack not complete");
+        //Debug.Log("attack not complete");
         return false;
     }
 }

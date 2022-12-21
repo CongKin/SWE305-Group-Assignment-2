@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044d8a8c76c612c4e935eb8f382cb8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasGravity: 0
   myRigidbody2D: {fileID: 0}
   myCapsuleCollider2D: {fileID: 0}
 --- !u!114 &1820643530127964528
@@ -303,7 +304,7 @@ MonoBehaviour:
   initialHealth: 10
   maxHealth: 10
   destroyObject: 1
-  expPrefab: {fileID: 0}
+  expPrefab: {fileID: 1383809626088948186, guid: 5c320b65e0f5032408e3be3928d5c1a4, type: 3}
   expCount: 1
 --- !u!114 &1820643530127964532
 MonoBehaviour:

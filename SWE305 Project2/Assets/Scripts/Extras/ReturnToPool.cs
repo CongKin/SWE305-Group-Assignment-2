@@ -13,11 +13,13 @@ public class ReturnToPool : MonoBehaviour
     // [Header("Effects")]
     // [SerializeField] private ParticleSystem impactPS;
 
+    private float delayTime;
     private Projectile projectile;    
 
     private void Start()
     {
         projectile = GetComponent<Projectile>();
+        delayTime = 1.0f;
     }
 
     // Returns this object to the pool
@@ -35,12 +37,19 @@ public class ReturnToPool : MonoBehaviour
     {
         if (CheckLayer(other.gameObject.layer, objectMask))
         {
+
             if (projectile != null)
             {
-                projectile.DisableProjectile();
+                if(animator != null)
+                {
+                    animator.SetTrigger("explode");
+                    StartCoroutine(Delay(delayTime));
+                }
+                else{
+                    projectile.DisableProjectile();
+                }
+                
             }
-
-            animator.SetTrigger("explode");
             // impactPS.Play();
             // Invoke(nameof(Return), impactPS.main.duration);
         }
@@ -59,5 +68,11 @@ public class ReturnToPool : MonoBehaviour
     private void OnDisable()
     {
         CancelInvoke();
+    }
+
+    IEnumerator Delay (float delayTime)
+    {
+        yield return new WaitForSeconds (delayTime);
+        projectile.DisableProjectile();
     }
 }

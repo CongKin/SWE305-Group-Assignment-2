@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: enemy_idle_idle
+  m_Name: tree_idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,11 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 6e4460827a2fe4f43b83b4c9c55ec1dd, type: 3}
-    - time: 0.16666667
+    - time: 0.28333333
       value: {fileID: 21300000, guid: 3499081f32826c44f9c92212e855410d, type: 3}
-    - time: 0.33333334
+    - time: 0.55
       value: {fileID: 21300000, guid: ccf98b6d631f2fc46a93f7683ea86482, type: 3}
-    - time: 0.5
+    - time: 0.8333333
       value: {fileID: 21300000, guid: 03733ed159cdb8541a3488919b1e6cd5, type: 3}
     attribute: m_Sprite
     path: 
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.51666665
+    m_StopTime: 0.84999996
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

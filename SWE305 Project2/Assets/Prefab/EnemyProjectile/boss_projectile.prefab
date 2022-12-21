@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1285702338549551287}
   - component: {fileID: 868550779876873674}
   - component: {fileID: 2630267978029893762}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 5786766636694386330}
   - component: {fileID: 5786766636694386331}
   - component: {fileID: 8956579766263008851}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: boss_projectile
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectMask:
     serializedVersion: 2
-    m_Bits: 1472
+    m_Bits: 1216
   lifeTime: 10
   animator: {fileID: 2630267978029893762}
 --- !u!58 &8956579766263008851
@@ -210,4 +210,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 1.82
