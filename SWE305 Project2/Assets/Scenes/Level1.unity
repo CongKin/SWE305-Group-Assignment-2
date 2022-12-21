@@ -4876,7 +4876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf2c0ab212e5fae439829af223cbf3e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1581670634}
   offset: {x: 0, y: 0}
   cameraMode: 0
 --- !u!1 &1255512738
@@ -5930,7 +5930,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1174403613
-  m_SortingLayer: 1
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eade7ac0a3fd84744ad8a70b80d590ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
