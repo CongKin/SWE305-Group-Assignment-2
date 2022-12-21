@@ -48,11 +48,6 @@ public class Character : MonoBehaviour
             inventory.RemoveItem(new Item { itemType = Item.ItemType.Health, amount = 1 });
             inventory.isFull--;
             break;
-        case Item.ItemType.Mana:
-            
-            inventory.RemoveItem(new Item { itemType = Item.ItemType.Mana, amount = 1 });
-            inventory.isFull--;
-            break;
         }
     }
 

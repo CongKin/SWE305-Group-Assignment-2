@@ -13,10 +13,8 @@ public class ItemAssets : MonoBehaviour {
 
     public Transform pfItemWorld;
 
-    public Sprite swordSprite;
     public Sprite healthSprite;
-    public Sprite manaSprite;
-    public Sprite coinSprite;
-    public Sprite medkitSprite;
+    public Sprite clothSackSprite;
+    public Sprite pumpkinSprite;
 
 }
