@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8243226828633712517}
   - component: {fileID: 8243226828633712518}
   - component: {fileID: 8243226828633712519}
+  - component: {fileID: 3913417397428736427}
   m_Layer: 0
   m_Name: ItemWorldSpawner_Bag
   m_TagString: Untagged
@@ -46,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item:
-    itemType: 1
+    itemType: 2
     amount: 1
     isFull: 0
 --- !u!212 &8243226828633712519
@@ -90,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300130, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
+  m_Sprite: {fileID: 1850346745072536440, guid: 42841dbacd4b88447a3d4ba22f85abdd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,3 +102,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3913417397428736427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8243226828633712568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30069fd5fc8b9f841a655bf089c1330d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDestroyItem: 1
+  healthToAdd: 10
+  healthBonus: {fileID: 0}

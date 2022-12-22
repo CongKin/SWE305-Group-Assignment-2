@@ -7,9 +7,9 @@ using UnityEngine;
 public class Item {
 
     public enum ItemType {
-        Health,
-        ClothSack,
-        Pumpkin
+        smallPotion,
+        mediumPotion,
+        bigPotion
     }
 
     public ItemType itemType;
@@ -20,18 +20,18 @@ public class Item {
     public Sprite GetSprite() {
         switch (itemType) {
         default:
-        case ItemType.Health:       return ItemAssets.Instance.healthSprite;
-        case ItemType.ClothSack:       return ItemAssets.Instance.clothSackSprite;
-        case ItemType.Pumpkin:       return ItemAssets.Instance.pumpkinSprite;
+        case ItemType.smallPotion:       return ItemAssets.Instance.smallPotion;
+        case ItemType.mediumPotion:       return ItemAssets.Instance.mediumPotion;
+        case ItemType.bigPotion:       return ItemAssets.Instance.bigPotion;
         }
     }
 
     public bool IsStackable() {
         switch (itemType) {
         default:
-        case ItemType.Health:
-        case ItemType.ClothSack:
-        case ItemType.Pumpkin:
+        case ItemType.smallPotion:
+        case ItemType.mediumPotion:
+        case ItemType.bigPotion:
             return true;
         }
     }

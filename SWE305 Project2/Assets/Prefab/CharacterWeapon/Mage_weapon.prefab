@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477029efdb3513648848b1acaac094dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reticlePrefab: {fileID: 2455572307964197889, guid: 342d0a6d5679aa740ac9f549aae763b1, type: 3}
+  reticlePrefab: {fileID: 2455572307964197889, guid: 926d13b6e02c9bb4ba34873df3120b60, type: 3}
 --- !u!114 &7417116641718876277
 MonoBehaviour:
   m_ObjectHideFlags: 0
