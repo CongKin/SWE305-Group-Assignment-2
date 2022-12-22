@@ -10,7 +10,9 @@ public class Vendor : MonoBehaviour
 [SerializeField] private GameObject popUpPanel;
 [SerializeField] private GameObject shopPanel;
  [Header("Items")]
- [SerializeField] private VendorItem healthItem;
+ [SerializeField] private VendorItem bigPotion;
+ [SerializeField] private VendorItem mediumPotion;
+ [SerializeField] private VendorItem smallPotion;
 private bool canOpenShop;
  private CharacterWeapon characterWeapon;
 
@@ -18,7 +20,7 @@ private bool canOpenShop;
  {
  if (canOpenShop)
  {
- if (Input.GetKeyDown(KeyCode.J))
+ if (Input.GetKeyDown(KeyCode.B))
  {
  shopPanel.SetActive(true);
  popUpPanel.SetActive(false);
@@ -32,12 +34,30 @@ private bool canOpenShop;
 
  private void BuyItems()
  {
-	if (Input.GetKeyDown(KeyCode.B))
+	if (Input.GetKeyDown(KeyCode.Z))
 	{
-		if (CoinManager.Instance.Coins >= healthItem.Cost)
+		if (CoinManager.Instance.Coins >= bigPotion.Cost)
 		{
-			healthItem.healthItem.AddHealth(characterWeapon.GetComponent<Character>());
-			ProductBought(healthItem.Cost);
+			smallPotion.smallPotion.AddHealth(characterWeapon.GetComponent<Character>());
+			ProductBought(smallPotion.Cost);
+		}
+	}
+
+	if (Input.GetKeyDown(KeyCode.X))
+	{
+		if (CoinManager.Instance.Coins >= mediumPotion.Cost)
+		{
+			mediumPotion.mediumPotion.AddHealth(characterWeapon.GetComponent<Character>());
+			ProductBought(mediumPotion.Cost);
+		}
+	}
+
+	if (Input.GetKeyDown(KeyCode.C))
+	{
+		if (CoinManager.Instance.Coins >= smallPotion.Cost)
+		{
+			bigPotion.bigPotion.AddHealth(characterWeapon.GetComponent<Character>());
+			ProductBought(bigPotion.Cost);
 		}
 	}
  }

@@ -12,7 +12,7 @@ public class UI_Inventory : MonoBehaviour {
     private Transform itemSlotContainerScreen;
     private Transform itemSlotTemplate;
     private Transform itemSlotTemplateScreen;
-    private Character player;
+    private CharacterInventory player;
     public static bool showPanel;
 
     [SerializeField] private GameObject inventoryPanel;
@@ -23,7 +23,7 @@ public class UI_Inventory : MonoBehaviour {
         itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
     }
 
-    public void SetPlayer(Character player) {
+    public void SetPlayer(CharacterInventory player) {
         this.player = player;
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - Event
   - Destination
+  - Item
   layers:
   - Default
   - TransparentFX
