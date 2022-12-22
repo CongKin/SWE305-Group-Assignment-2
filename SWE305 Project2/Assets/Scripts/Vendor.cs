@@ -20,7 +20,7 @@ private bool canOpenShop;
  {
  if (canOpenShop)
  {
- if (Input.GetKeyDown(KeyCode.B))
+ if (Input.GetKeyDown(KeyCode.O))
  {
  shopPanel.SetActive(true);
  popUpPanel.SetActive(false);
