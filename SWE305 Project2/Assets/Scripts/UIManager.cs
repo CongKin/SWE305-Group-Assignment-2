@@ -15,8 +15,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI currentLevelTMP;
 
     [Header("Weapon")]
-	[SerializeField] private TextMeshProUGUI currentAmmoTMP;
-    [SerializeField] private Image weaponImage;
+	private TextMeshProUGUI currentAmmoTMP;
+    private Image weaponImage;
 
     [Header("Text")] 
     [SerializeField] private TextMeshProUGUI coinsTMP;
