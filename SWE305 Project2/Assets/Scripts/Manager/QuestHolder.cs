@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestHolder : Singleton<QuestHolder>
 {
@@ -9,6 +10,7 @@ public class QuestHolder : Singleton<QuestHolder>
     [SerializeField] private TextMeshProUGUI questSummaryTitle;
     [SerializeField] private TextMeshProUGUI questSummaryProgress;
     [SerializeField] public GameObject doneIcon;
+    [SerializeField] public GameObject button; 
 
     public Quest quest;
 
@@ -21,9 +23,6 @@ public class QuestHolder : Singleton<QuestHolder>
         quest.goal.EnemyKilled(other);
         updateQuestUI();
         if(quest.goal.isReached()){
-            // reward
-
-            quest = null;
             QuestManger.Instance.updateQuest();
         }
     }
@@ -32,9 +31,6 @@ public class QuestHolder : Singleton<QuestHolder>
         quest.goal.ItemGathered(other);
         updateQuestUI();
         if(quest.goal.isReached()){
-            // reward
-
-            quest = null;
             QuestManger.Instance.updateQuest();
         }
     }
@@ -43,10 +39,20 @@ public class QuestHolder : Singleton<QuestHolder>
     {
         questSummaryTitle.text = quest.title;
         questSummaryProgress.text = quest.goal.currentAmount + "/" + quest.goal.requiredAmount;
+        Debug.Log("update Quest UI");
 
         if(quest.goal.isReached())
         {
+            button.GetComponent<Button>().enabled = true;
             doneIcon.SetActive(true);
         }
+    }
+
+    public void collectReward()
+    {
+        CoinManager.Instance.AddCoins(quest.coinReward);
+        player.GetComponent<CharacterStats>().increaseEXP((float)quest.expReward);
+        quest = null;
+        button.SetActive(false);
     }
 }

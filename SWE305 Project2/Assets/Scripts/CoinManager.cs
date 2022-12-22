@@ -20,6 +20,7 @@ public class CoinManager : Singleton<CoinManager>
 
     public void AddCoins(int amount)
     {
+        Debug.Log("Add coin: " + amount);
         Coins += amount;
         PlayerPrefs.SetInt(COINS_KEY, Coins);
     }

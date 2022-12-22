@@ -9,7 +9,7 @@ public class Quest
 
     public string title;
     public string description;
-    public int appleReward;
+    public int coinReward;
     public int expReward;
 
     public QuestGoal goal;

@@ -99,7 +99,7 @@ public class Health : MonoBehaviour
                     exp.transform.rotation = transform.rotation;
                 }
 
-                //QuestHolder.Instance.quest.goal.EnemyKilled(killTarget);
+                QuestHolder.Instance.EnemyKilled(killTarget);
                 canDestroy = true;
             }
             else{
