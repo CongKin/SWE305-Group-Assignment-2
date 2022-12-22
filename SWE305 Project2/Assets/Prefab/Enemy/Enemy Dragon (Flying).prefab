@@ -171,7 +171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820643530127964490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.251, y: 8.531, z: 1}
+  m_LocalPosition: {x: 2.251, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99152e33ea03695458e6e5e67dc058ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponToUse: {fileID: 7417116641718876272, guid: 5e4144c029a3ac6489a82d37c077fbcd, type: 3}
+  weaponToUse: {fileID: 7417116641718876272, guid: b89ed9baaa917854da209d31cddae72f, type: 3}
   weaponHolderPosition: {fileID: 1820643529749017404}
 --- !u!61 &1820643530127964536
 BoxCollider2D:
