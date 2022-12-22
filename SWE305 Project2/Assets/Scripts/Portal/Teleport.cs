@@ -17,22 +17,22 @@ public class Teleport : MonoBehaviour
     void Start()
     {
         levelItemManager = GetComponent<LevelItemManager>();
-        Debug.Log("start");
-        Debug.Log(destination.position.x + " + " + destination.position.y);
+        //Debug.Log("start");
+        //Debug.Log(destination.position.x + " + " + destination.position.y);
     }
 
     void Update()
     {
         if(canTeleport && Input.GetKeyDown(interactKey))
         {
-            Debug.Log("key");
+            //Debug.Log("key");
             if (Vector2.Distance(transform.position, player.transform.position) > distance)
             {
                 if(enterLevel){
-                    Debug.Log("spawn enemy");
+                    //Debug.Log("spawn enemy");
                     levelItemManager.spawnEnemy();
                 }else{
-                    Debug.Log("destroy enemy");
+                    //Debug.Log("destroy enemy");
                     levelItemManager.destroyEnemy();
                 }
                 player.transform.position = new Vector2 (destination.position.x, destination.position.y);
@@ -44,7 +44,7 @@ public class Teleport : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("player in range" + canTeleport);
+            //Debug.Log("player in range" + canTeleport);
             canTeleport = true;
         }
     }
@@ -53,7 +53,7 @@ public class Teleport : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("player out of range" + canTeleport);
+            //Debug.Log("player out of range" + canTeleport);
             canTeleport = false;
         }
     }
