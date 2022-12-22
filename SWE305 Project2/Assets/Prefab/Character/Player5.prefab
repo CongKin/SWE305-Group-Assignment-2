@@ -135,7 +135,6 @@ MonoBehaviour:
   characterType: 0
   characterSprite: {fileID: 7815741126823400533}
   characterAnimator: {fileID: 7815741126823400543}
-  uiInventory: {fileID: 0}
 --- !u!114 &7815741126823400541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,19 +323,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0da4d7a0668bb94caafbadca68c48e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 1000
-  maxHealth: 1000
+  initialHealth: 100
+  maxHealth: 100
   destroyObject: 1
   expPrefab: {fileID: 0}
   expCount: 0
   killTarget: 0
   level: 1
   currExp: 0
-  maxExp: 0
-  baseDamage: 0
-  expRatio: 0
-  healthRatio: 0
-  dmgRatio: 0
+  maxExp: 100
+  baseDamage: 5
+  expRatio: 1.55
+  healthRatio: 1.3
+  dmgRatio: 1.4
 --- !u!1 &7815741127299988875
 GameObject:
   m_ObjectHideFlags: 0

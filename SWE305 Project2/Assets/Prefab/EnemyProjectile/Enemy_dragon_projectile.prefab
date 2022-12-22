@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 5786766636694386331}
   m_Layer: 12
   m_Name: Enemy_dragon_projectile
-  m_TagString: Bullet
+  m_TagString: Bullet_dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

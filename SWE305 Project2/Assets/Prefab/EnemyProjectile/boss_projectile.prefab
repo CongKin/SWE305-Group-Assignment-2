@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 8956579766263008851}
   m_Layer: 12
   m_Name: boss_projectile
-  m_TagString: Bullet
+  m_TagString: Bullet_boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

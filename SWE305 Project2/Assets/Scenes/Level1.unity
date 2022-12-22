@@ -1598,9 +1598,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1413603649}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ExitGame
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38162,7 +38162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df62c1200bc757347934d786755cd738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToApply: 1
+  damageToApplyArrow: 1
+  damageToApplyDragon: 1
+  damageToApplyBoss: 1
 --- !u!114 &2017009365
 MonoBehaviour:
   m_ObjectHideFlags: 0

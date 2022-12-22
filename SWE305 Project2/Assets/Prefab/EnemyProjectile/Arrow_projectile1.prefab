@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 5786766636694386331}
   m_Layer: 12
   m_Name: Arrow_projectile1
-  m_TagString: Bullet
+  m_TagString: Bullet_arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

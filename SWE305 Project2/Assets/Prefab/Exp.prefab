@@ -121,12 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef3b56f99674d74f8a6374b2ed9d62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5963168257532787783, guid: 06be84e42d1dbdf47898ed1b49f64a12, type: 3}
+  player: {fileID: 7815741126823400533, guid: 94bbd44b47e88164585aa621aaa95e04, type: 3}
   timer: 0
   moveToPlayer: 0
   speed: 5
   rb: {fileID: 1383809626088948132}
-  expAmt: 1
+  expAmt: 20
 --- !u!50 &1383809626088948132
 Rigidbody2D:
   serializedVersion: 4

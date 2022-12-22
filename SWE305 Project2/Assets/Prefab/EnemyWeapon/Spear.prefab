@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78bfbcfa1f8ddc248ab97aaac2da2adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 5
 --- !u!61 &1568604640541134319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4b7f142af89f4419fd74b1fa108cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName: tree
+  weaponName: spear
   timeBtwShots: 0
   useMagazine: 0
   magazineSize: 30

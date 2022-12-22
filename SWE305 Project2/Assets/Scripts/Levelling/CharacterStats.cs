@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterStats : Health
+public class CharacterStats : MonoBehaviour
 {
     public int level = 1;
 
@@ -17,21 +17,25 @@ public class CharacterStats : Health
     [SerializeField]private float expRatio;
     [SerializeField]private float healthRatio;
     [SerializeField]private float dmgRatio;
+    private Health health;
 
     void Start()
     {
+        health = GetComponent<Health>();
+
         level = 1;
-        currHealth = 100;
-        maxH = 100;
+        currHealth = health.CurrentHealth;
+        maxH = health.maxHealth;
         currExp = 0;
         maxExp = 100;
-        baseDamage = 5;
+        baseDamage = 10;
         expRatio = 1.4f;
         healthRatio = 1.3f;
-        dmgRatio= 1.55f;
+        dmgRatio= 1.3f;
         maxExp = 100;
 
         UIManager.Instance.UpdateLevel(level, true);
+        PlayerDamageManager.Instance.UpdateBaseDamage((int) baseDamage);
     }
 
     void Update()
@@ -40,26 +44,30 @@ public class CharacterStats : Health
         
         if(currExp >= maxExp)
         {
+            currExp -= maxExp;
             LevelUp();
         }
     }
 
     public void UpdateUI()
     {
-        UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, true);
+        UIManager.Instance.UpdateHealth(health.CurrentHealth, health.maxHealth, true);
         UIManager.Instance.UpdateExperience((float)currExp, (float)maxExp, true);
         UIManager.Instance.UpdateLevel(level, true);
     }
 
     private void LevelUp()
     {
+        currHealth = health.CurrentHealth;
+
         level ++;
         currHealth *= healthRatio;
         maxH *= healthRatio;
 
-        CurrentHealth = (float) Math.Ceiling(currHealth);
-        maxHealth = (float) Math.Ceiling(maxH);
-        
+        health.CurrentHealth = (float) Math.Ceiling(currHealth);
+        health.maxHealth = (float) Math.Ceiling(maxH);
+
+
         currExp *= expRatio;
         maxExp *= expRatio;
 
@@ -69,8 +77,7 @@ public class CharacterStats : Health
         baseDamage *= dmgRatio; 
         PlayerDamageManager.Instance.UpdateBaseDamage((int) baseDamage);
         
-        // levelUpIcon.gameObject.SetActive(true);
-        currExp = 0;
+        // levelUpIcon.gameObject.SetActive(true);SS
 
         UpdateUI();
     }

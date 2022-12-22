@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
 {    
     [Header("Health")]
     [SerializeField] protected float initialHealth = 10f;
-    [SerializeField] protected float maxHealth = 10f;
+    [SerializeField] public float maxHealth = 10f;
 
     [Header("Settings")] 
     [SerializeField] private bool destroyObject;

@@ -300,12 +300,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77be4030dec7a1458af5572c61dd95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 10
-  maxHealth: 10
+  initialHealth: 300
+  maxHealth: 300
   destroyObject: 1
   expPrefab: {fileID: 1383809626088948186, guid: 5c320b65e0f5032408e3be3928d5c1a4, type: 3}
-  expCount: 1
-  killTarget: 0
+  expCount: 5
+  killTarget: 1
 --- !u!114 &1820643530127964532
 MonoBehaviour:
   m_ObjectHideFlags: 0

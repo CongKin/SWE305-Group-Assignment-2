@@ -5,7 +5,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    [SerializeField] private GameObject Level;
+    [SerializeField] private GameObject Control;
     [SerializeField] private GameObject LevelBar;
 
 
@@ -40,9 +40,15 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void Levels()
+    public void Controls()
     {
-        Level.SetActive(true);
+        Control.SetActive(true);
         pauseMenuUI.SetActive(false);
+    }
+
+    public void ExitGame()
+    {
+        Debug.Log("Exit");
+        Application.Quit();
     }
 }
