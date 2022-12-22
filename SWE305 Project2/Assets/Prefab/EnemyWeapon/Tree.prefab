@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78bfbcfa1f8ddc248ab97aaac2da2adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 100
 --- !u!1 &4407600443295158269
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,9 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: tree
   timeBtwShots: 0
-  useMagazine: 1
+  useMagazine: 0
   magazineSize: 30
-  autoReload: 1
+  autoReload: 0
   useRecoil: 0
   recoilForce: 30
   attackDelay: 1.5

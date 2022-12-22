@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e36f2c4cad28d45bd5dbb241e74b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipMode: 0
+  flipMode: 1
   threshold: 0.1
 --- !u!114 &7815741126823400536
 MonoBehaviour:
@@ -283,7 +283,7 @@ MonoBehaviour:
   maxHealth: 1000
   destroyObject: 1
   expPrefab: {fileID: 0}
-  expCount: 1
+  expCount: 0
   killTarget: 0
 --- !u!114 &7815741126823400480
 MonoBehaviour:
@@ -328,11 +328,9 @@ MonoBehaviour:
   maxHealth: 1000
   destroyObject: 1
   expPrefab: {fileID: 0}
-  expCount: 1
+  expCount: 0
   killTarget: 0
   level: 1
-  currHealth: 0
-  maxH: 0
   currExp: 0
   maxExp: 0
   baseDamage: 0

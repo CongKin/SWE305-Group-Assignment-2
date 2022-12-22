@@ -172,9 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: tree
   timeBtwShots: 0
-  useMagazine: 1
+  useMagazine: 0
   magazineSize: 30
-  autoReload: 1
+  autoReload: 0
   useRecoil: 0
   recoilForce: 30
   attackDelay: 1.5
