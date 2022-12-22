@@ -172,10 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: axe
   timeBtwShots: 1.5
-  useMagazine: 1
+  useMagazine: 0
   magazineSize: 30
-  autoReload: 1
+  autoReload: 0
   useRecoil: 0
   recoilForce: 30
   attackDelay: 1.5
-  animator: {fileID: 7815741126823400543, guid: 91142ce46f9af674681d82c23cc5bc96, type: 3}
