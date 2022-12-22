@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Floor
   - Event
+  - Destination
   layers:
   - Default
   - TransparentFX

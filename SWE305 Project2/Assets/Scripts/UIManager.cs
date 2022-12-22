@@ -71,14 +71,14 @@ public class UIManager : Singleton<UIManager>
     private void InternalUpdate()
     {
         if (isPlayer)
-        {        
+        {     
            healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, playerCurrentHealth / playerMaxHealth, 10f * Time.deltaTime);
            currentHealthTMP.text = playerCurrentHealth.ToString() + "/" + playerMaxHealth.ToString(); 
 
            experienceBar.fillAmount = Mathf.Lerp(experienceBar.fillAmount, playerCurrentExperience / playerMaxExperience, 10f * Time.deltaTime);
            currentExperienceTMP.text = playerCurrentExperience.ToString() + "/" + playerMaxExperience.ToString();
 
-           //currentLevelTMP.text = playerCurrentLevel.ToString();
+           currentLevelTMP.text = playerCurrentLevel.ToString();
         }
  
 
