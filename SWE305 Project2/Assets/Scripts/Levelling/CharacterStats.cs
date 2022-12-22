@@ -74,4 +74,9 @@ public class CharacterStats : Health
 
         UpdateUI();
     }
+
+    public void increaseEXP(float exp)
+    {
+        currExp += exp;
+    }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestManger : Singleton<QuestManger>
 {
@@ -9,7 +10,7 @@ public class QuestManger : Singleton<QuestManger>
 
     [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private TextMeshProUGUI description;
-    [SerializeField] private TextMeshProUGUI appleText;
+    [SerializeField] private TextMeshProUGUI coinText;
     [SerializeField] private TextMeshProUGUI expText;
 
     [SerializeField] public List<QuestNPC> questList;
@@ -41,9 +42,8 @@ public class QuestManger : Singleton<QuestManger>
         questWindow.SetActive(true);
         title.text = quest.title;
         description.text = quest.description;
-        appleText.text = quest.appleReward.ToString()+" apples";
+        coinText.text = quest.coinReward.ToString()+" coins";
         expText.text = quest.expReward.ToString()+" exp";
-
     }
 
     public void acceptQuest(){
@@ -53,6 +53,8 @@ public class QuestManger : Singleton<QuestManger>
         QuestHolder.Instance.quest = questNPC.npc.GetComponent<QuestGiver>().quest;
         QuestHolder.Instance.updateQuestUI();
         QuestHolder.Instance.doneIcon.SetActive(false);
+        QuestHolder.Instance.button.SetActive(true);
+        QuestHolder.Instance.button.GetComponent<Button>().enabled = false;
         questNPC.npc.GetComponent<QuestGiver>().quest = null;
     }
 }
