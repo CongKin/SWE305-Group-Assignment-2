@@ -8,12 +8,15 @@ public class Teleport : MonoBehaviour
     [SerializeField]private Transform player;
     [SerializeField]private Transform destination;
     [SerializeField]private KeyCode interactKey;
+    [SerializeField]private bool enterLevel;
 
     public bool canTeleport;
     private float distance = 0.2f;
+    private LevelItemManager levelItemManager;
 
     void Start()
     {
+        levelItemManager = GetComponent<LevelItemManager>();
         Debug.Log("start");
         Debug.Log(destination.position.x + " + " + destination.position.y);
     }
@@ -25,7 +28,13 @@ public class Teleport : MonoBehaviour
             Debug.Log("key");
             if (Vector2.Distance(transform.position, player.transform.position) > distance)
             {
-                Debug.Log("teleport");
+                if(enterLevel){
+                    Debug.Log("spawn enemy");
+                    levelItemManager.spawnEnemy();
+                }else{
+                    Debug.Log("destroy enemy");
+                    levelItemManager.destroyEnemy();
+                }
                 player.transform.position = new Vector2 (destination.position.x, destination.position.y);
             }
         }

@@ -22,17 +22,11 @@ public class QuestHolder : Singleton<QuestHolder>
     public void EnemyKilled(KillTarget other){
         quest.goal.EnemyKilled(other);
         updateQuestUI();
-        if(quest.goal.isReached()){
-            QuestManger.Instance.updateQuest();
-        }
     }
 
     public void ItemGathered(GatherObjectType other){
         quest.goal.ItemGathered(other);
         updateQuestUI();
-        if(quest.goal.isReached()){
-            QuestManger.Instance.updateQuest();
-        }
     }
 
     public void updateQuestUI()
@@ -54,5 +48,6 @@ public class QuestHolder : Singleton<QuestHolder>
         player.GetComponent<CharacterStats>().increaseEXP((float)quest.expReward);
         quest = null;
         button.SetActive(false);
+        QuestManger.Instance.updateQuest();
     }
 }
