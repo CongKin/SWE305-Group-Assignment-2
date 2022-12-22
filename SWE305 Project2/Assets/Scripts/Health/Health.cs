@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Health : MonoBehaviour
 {    
@@ -29,6 +30,7 @@ public class Health : MonoBehaviour
     public float CurrentHealth { get; set; }
 
     public KillTarget killTarget;
+    private Vector3 expRandPosition;
 
     private void Awake()
     {
@@ -95,7 +97,9 @@ public class Health : MonoBehaviour
                 {
                     //Debug.Log("exp");
                     GameObject exp = Instantiate(expPrefab);
-                    exp.transform.localPosition = transform.position;
+                    expRandPosition.x = Random.Range(-1,1);
+                    expRandPosition.y = 0;
+                    exp.transform.localPosition = transform.position + expRandPosition;
                     exp.transform.rotation = transform.rotation;
                 }
 
