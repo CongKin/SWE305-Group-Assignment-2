@@ -7,10 +7,10 @@ public class CharacterStats : Health
 {
     public int level = 1;
 
-    public float currHealth;
-    public float maxH;
-    public float currExp;
-    public float maxExp;
+    private float currHealth;
+    private float maxH;
+    [SerializeField]public float currExp;
+    [SerializeField]private float maxExp;
 
     public float baseDamage;
 
@@ -21,16 +21,23 @@ public class CharacterStats : Health
     void Start()
     {
         level = 1;
+        currHealth = 100;
+        maxH = 100;
+        currExp = 0;
+        maxExp = 100;
+        baseDamage = 5;
         expRatio = 1.4f;
         healthRatio = 1.3f;
         dmgRatio= 1.55f;
         maxExp = 100;
+
+        UIManager.Instance.UpdateLevel(level, true);
     }
 
     void Update()
     {
         UIManager.Instance.UpdateExperience((float)currExp, (float)maxExp, true);
-
+        
         if(currExp >= maxExp)
         {
             LevelUp();
