@@ -90,10 +90,10 @@ public class Health : MonoBehaviour
         {
             if(!isPlayer)
             {
-                Debug.Log("inside");
+                //Debug.Log("inside");
                 for (int i = 0; i < expCount; i ++)
                 {
-                    Debug.Log("exp");
+                    //Debug.Log("exp");
                     GameObject exp = Instantiate(expPrefab);
                     exp.transform.localPosition = transform.position;
                     exp.transform.rotation = transform.rotation;
@@ -103,13 +103,13 @@ public class Health : MonoBehaviour
                 canDestroy = true;
             }
             else{
-                Debug.Log("Outside");
+                //Debug.Log("Outside");
                 canDestroy = true;
             }
 
             if(canDestroy == true)
             {
-                Debug.Log("not AI");
+                //Debug.Log("not AI");
                 collider2D.enabled = false;
                 spriteRenderer.enabled = false;
 
@@ -121,7 +121,7 @@ public class Health : MonoBehaviour
 
         if (destroyObject)
         {
-            Debug.Log("destroy obj");
+            //Debug.Log("destroy obj");
             DestroyObject();
         }
     }
@@ -163,14 +163,14 @@ public class Health : MonoBehaviour
         // Update Enemy health
         if (enemyHealth != null)
         {
-            Debug.Log("update enemy");
+            //Debug.Log("update enemy");
             enemyHealth.UpdateEnemyHealth(CurrentHealth, maxHealth);
         }  
       
         // Update Player health
         if (character != null && isPlayer)
         {
-            Debug.Log("update player: " + isPlayer);
+            //Debug.Log("update player: " + isPlayer);
             UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, isPlayer);
         }
     }   
