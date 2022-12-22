@@ -477,6 +477,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currency: 1000
   CurrencyTXT: {fileID: 84020333}
+  smallPotion: {fileID: 1746864128972419244, guid: 84f5d586479e99a4d8e3dd4822848edf, type: 3}
+  mediumPotion: {fileID: -3859293686546308770, guid: 84f5d586479e99a4d8e3dd4822848edf, type: 3}
+  bigPotion: {fileID: -299861996715226795, guid: 84f5d586479e99a4d8e3dd4822848edf, type: 3}
 --- !u!4 &765543330
 Transform:
   m_ObjectHideFlags: 0

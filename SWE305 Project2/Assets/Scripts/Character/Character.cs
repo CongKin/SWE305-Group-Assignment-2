@@ -43,9 +43,21 @@ public class Character : MonoBehaviour
 
     private void UseItem(Item item) {
         switch (item.itemType) {
-        case Item.ItemType.Health:
+        case Item.ItemType.smallPotion:
             
-            inventory.RemoveItem(new Item { itemType = Item.ItemType.Health, amount = 1 });
+            inventory.RemoveItem(new Item { itemType = Item.ItemType.smallPotion, amount = 1 });
+            inventory.isFull--;
+            break;
+        
+        case Item.ItemType.mediumPotion:
+            
+            inventory.RemoveItem(new Item { itemType = Item.ItemType.mediumPotion, amount = 1 });
+            inventory.isFull--;
+            break;
+        
+        case Item.ItemType.bigPotion:
+            
+            inventory.RemoveItem(new Item { itemType = Item.ItemType.bigPotion, amount = 1 });
             inventory.isFull--;
             break;
         }
