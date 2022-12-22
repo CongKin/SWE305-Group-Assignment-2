@@ -30,12 +30,14 @@ public class CharacterStats : Health
         healthRatio = 1.3f;
         dmgRatio= 1.55f;
         maxExp = 100;
+
+        UIManager.Instance.UpdateLevel(level, true);
     }
 
     void Update()
     {
         UIManager.Instance.UpdateExperience((float)currExp, (float)maxExp, true);
-
+        
         if(currExp >= maxExp)
         {
             LevelUp();
