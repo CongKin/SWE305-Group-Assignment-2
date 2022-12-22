@@ -163,12 +163,14 @@ public class Health : MonoBehaviour
         // Update Enemy health
         if (enemyHealth != null)
         {
+            Debug.Log("update enemy");
             enemyHealth.UpdateEnemyHealth(CurrentHealth, maxHealth);
         }  
       
         // Update Player health
-        if (character != null)
+        if (character != null && isPlayer)
         {
+            Debug.Log("update player: " + isPlayer);
             UIManager.Instance.UpdateHealth(CurrentHealth, maxHealth, isPlayer);
         }
     }   

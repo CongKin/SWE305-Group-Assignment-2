@@ -71,7 +71,7 @@ public class UIManager : Singleton<UIManager>
     private void InternalUpdate()
     {
         if (isPlayer)
-        {        
+        {     
            healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, playerCurrentHealth / playerMaxHealth, 10f * Time.deltaTime);
            currentHealthTMP.text = playerCurrentHealth.ToString() + "/" + playerMaxHealth.ToString(); 
 

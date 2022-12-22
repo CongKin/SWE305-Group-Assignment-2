@@ -45,7 +45,7 @@ public class ExpCollectables : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            //other.gameObject.GetComponent<CharacterStats>().currExp += expAmt;
+            other.gameObject.GetComponent<CharacterStats>().currExp += expAmt;
             Destroy(gameObject);
         }
     }
