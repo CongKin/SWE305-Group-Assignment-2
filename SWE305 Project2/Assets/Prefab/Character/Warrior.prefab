@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 7815741126823400482}
   - component: {fileID: 3156165854057388956}
   m_Layer: 10
-  m_Name: Player5
+  m_Name: Warrior
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_SortingLayerID: -1174403613
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eade7ac0a3fd84744ad8a70b80d590ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83ffbb4e144ae6944a4b8750c49356f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,7 +110,7 @@ Animator:
   m_GameObject: {fileID: 7815741126823400533}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d36344dc4ccebf64cb017a201a099b87, type: 2}
+  m_Controller: {fileID: 9100000, guid: fba6647a2e16932438df4b8fe5201318, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -254,18 +254,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02806902, y: -0.079529405}
+  m_Offset: {x: -0.22131205, y: -0.26729846}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 1.4133333}
+    oldSize: {x: 1.6533333, y: 1.7333333}
     newSize: {x: 1.02, y: 1.06}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6925268, y: 0.90094113}
+  m_Size: {x: 1.0621958, y: 1.1121812}
   m_EdgeRadius: 0
 --- !u!114 &7815741126823400483
 MonoBehaviour:
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99152e33ea03695458e6e5e67dc058ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponToUse: {fileID: 7417116641718876272, guid: 5e4144c029a3ac6489a82d37c077fbcd, type: 3}
+  weaponToUse: {fileID: 2944311807269531836, guid: 6e10058c23f0f7e4b852f0a5c335ae66, type: 3}
   weaponHolderPosition: {fileID: 7815741127354521932}
 --- !u!114 &3156165854057388956
 MonoBehaviour:
@@ -361,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7815741127299988875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: -0.27, y: -0.793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -392,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7815741127354521933}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.029000282, y: 0.2079997, z: 0}
+  m_LocalPosition: {x: 0.223, y: -0.761, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
