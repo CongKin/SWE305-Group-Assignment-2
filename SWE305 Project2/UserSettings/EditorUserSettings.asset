@@ -6,12 +6,17 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+<<<<<<< Updated upstream
       value: 5203015306000c0e545e09721170064444151a2f78707f632b2b1b6abab6676f
+=======
+      value: 5304025e54575e5e0e0d0a261177064446164c2c2d7f27647d701c6ab6e46c3c
+>>>>>>> Stashed changes
       flags: 0
     RecentlyUsedSceneGuid-1:
       value: 5304025e54575e5e0e0d0a261177064446164c2c2d7f27647d701c6ab6e46c3c
       flags: 0
     RecentlyUsedSceneGuid-2:
+<<<<<<< Updated upstream
       value: 5304025e54575e5e0e0d0a261177064446164c2c2d7f27647d701c6ab6e46c3c
       flags: 0
     RecentlyUsedSceneGuid-3:
@@ -19,11 +24,21 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-4:
       value: 520952545156580e0b57542145275e444e4e4b2b797925362c7e496abbb1306c
+=======
+      value: 05550c05560d0c5e545d5f71447a5b444516192e747173682e2a496ae3b36c68
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 0209550553560a0d550c087511215e4442161a78757977652b791e60b4e66d3b
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 550907050651085e5e5d097246760b4417154e797e2a746929781937b7b3366e
+>>>>>>> Stashed changes
       flags: 0
     RecentlyUsedSceneGuid-5:
       value: 5a54045f55060f02555b0e7448225c444e161a297f2973317f7f1f36e4b96d61
       flags: 0
     RecentlyUsedSceneGuid-6:
+<<<<<<< Updated upstream
       value: 5101005e5300580b0b590e23457b084442164b79297972667c7b4a30bbe4306e
       flags: 0
     RecentlyUsedSceneGuid-7:
@@ -37,6 +52,15 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 565357045c510b02585b5d7749745d4446164e7e282c273179714965b2e3306a
+>>>>>>> Stashed changes
+=======
+      value: 520952545156580e0b57542145275e444e4e4b2b797925362c7e496abbb1306c
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 5a075657570451595d0a5e7a45250b4444161a727e2b233479791960b0e53639
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5203015306000c0e545e09721170064444151a2f78707f632b2b1b6abab6676f
 >>>>>>> Stashed changes
       flags: 0
     RecentlyUsedSceneGuid-9:
