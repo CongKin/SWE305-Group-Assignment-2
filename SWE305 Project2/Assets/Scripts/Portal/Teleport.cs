@@ -14,7 +14,8 @@ public class Teleport : MonoBehaviour
 
     void Start()
     {
-        destination = GameObject.FindGameObjectWithTag("Destination").GetComponent<Transform>();
+        Debug.Log("start");
+        Debug.Log(destination.position.x + " + " + destination.position.y);
     }
 
     void Update()
@@ -39,8 +40,12 @@ public class Teleport : MonoBehaviour
         }
     }
 
-    // private void TeleportToDestination()
-    // {
-        
-    // }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            Debug.Log("player out of range" + canTeleport);
+            canTeleport = false;
+        }
+    }
 }
